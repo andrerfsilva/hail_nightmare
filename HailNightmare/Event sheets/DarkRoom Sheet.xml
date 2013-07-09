@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DarkRoom Sheet</name>
+    <events>
+        <event-block sid="5327203796643251">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="9234268412678461" type="MouseLight">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.y</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="3714436985188699" type="Player">
+                    <param id="0" name="Gravity">FakePlataform.Platform.Gravity</param>
+                </action>
+                <action id="-3" name="Set position" sid="4956546094562577" type="MouseLight3">
+                    <param id="0" name="X">Shadow2.X</param>
+                    <param id="1" name="Y">Shadow2.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="7450698450719165" type="MouseLight4">
+                    <param id="0" name="X">Shadow3.X</param>
+                    <param id="1" name="Y">Shadow3.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="9774545068684574" type="MouseLight5">
+                    <param id="0" name="X">Shadow.X</param>
+                    <param id="1" name="Y">Shadow.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="1805662820869907" type="Text">
+                    <param id="0" name="Text">&quot;Life: &quot; &amp; Player.life</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6834089806134601">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="4458606447719189" type="Player">
+                    <param id="0" name="Object">Stairs</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="5" name="Set gravity" sid="5384986525225152" type="Player">
+                    <param id="0" name="Gravity">-FakePlataform.Platform.Gravity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="27172795064592">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9160499522439392" type="Shadow">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="5340170640906327" type="Player">
+                    <param id="0" name="Instance variable">life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2690509745421321">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5606422878430277" type="Shadow2">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="7060150345289205" type="Player">
+                    <param id="0" name="Instance variable">life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6871616220526628">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1846138818472193" type="Shadow3">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="6342168451115021" type="Player">
+                    <param id="0" name="Instance variable">life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
