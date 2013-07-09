@@ -5,13 +5,13 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <configurations>
         <active>
-            <configuration name="HTML5" />
+            <configuration name="HTML 5" />
         </active>
-        <display name="HTML5" />
+        <display name="HTML 5" />
     </configurations>
     <open-tabs>
-        <layout active="1">DarkRoom</layout>
-        <event-sheet>DarkRoom Sheet</event-sheet>
+        <layout>DarkRoom</layout>
+        <event-sheet active="1">DarkRoom Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -19,5 +19,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1" />
+    <families-expanded root="1">
+        <family expanded="1" name="Enemies" />
+    </families-expanded>
 </c2uistate>

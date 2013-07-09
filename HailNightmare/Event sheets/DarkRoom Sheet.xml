@@ -44,40 +44,14 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="27172795064592">
+        <event-block sid="8305609441529509">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="9160499522439392" type="Shadow">
+                <condition id="0" name="On collision with another object" sid="839083933295722" type="Enemies">
                     <param id="0" name="Object">Player</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-12" name="Subtract from" sid="5340170640906327" type="Player">
-                    <param id="0" name="Instance variable">life</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2690509745421321">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5606422878430277" type="Shadow2">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="7060150345289205" type="Player">
-                    <param id="0" name="Instance variable">life</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6871616220526628">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1846138818472193" type="Shadow3">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="6342168451115021" type="Player">
+                <action id="-12" name="Subtract from" sid="8371701319692776" type="Player">
                     <param id="0" name="Instance variable">life</param>
                     <param id="1" name="Value">10</param>
                 </action>
