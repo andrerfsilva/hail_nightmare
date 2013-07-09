@@ -3,59 +3,102 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>DarkRoom Sheet</name>
     <events>
-        <event-block sid="5327203796643251">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="9234268412678461" type="MouseLight">
-                    <param id="0" name="X">Player.X</param>
-                    <param id="1" name="Y">Player.y</param>
-                </action>
-                <action behavior="Platform" id="5" name="Set gravity" sid="3714436985188699" type="Player">
-                    <param id="0" name="Gravity">FakePlataform.Platform.Gravity</param>
-                </action>
-                <action id="-3" name="Set position" sid="4956546094562577" type="MouseLight3">
-                    <param id="0" name="X">Shadow2.X</param>
-                    <param id="1" name="Y">Shadow2.Y</param>
-                </action>
-                <action id="-3" name="Set position" sid="7450698450719165" type="MouseLight4">
-                    <param id="0" name="X">Shadow3.X</param>
-                    <param id="1" name="Y">Shadow3.Y</param>
-                </action>
-                <action id="-3" name="Set position" sid="9774545068684574" type="MouseLight5">
-                    <param id="0" name="X">Shadow.X</param>
-                    <param id="1" name="Y">Shadow.Y</param>
-                </action>
-                <action id="0" name="Set text" sid="1805662820869907" type="Text">
-                    <param id="0" name="Text">&quot;Life: &quot; &amp; Player.life</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6834089806134601">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="4458606447719189" type="Player">
-                    <param id="0" name="Object">Stairs</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="5" name="Set gravity" sid="5384986525225152" type="Player">
-                    <param id="0" name="Gravity">-FakePlataform.Platform.Gravity</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8305609441529509">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="839083933295722" type="Enemies">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="8371701319692776" type="Player">
-                    <param id="0" name="Instance variable">life</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group collapsed="1" description="" sid="3377084275309421" title="Eventos globais">
+            <sub-events>
+                <event-block sid="5327203796643251">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="9234268412678461" type="MouseLight">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.y</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1805662820869907" type="Text">
+                            <param id="0" name="Text">&quot;Life: &quot; &amp; Player.life</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="8697542792635993" title="Eventos de escalada">
+            <sub-events>
+                <event-block sid="4837224393163447">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="7564244444761502" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="6834089806134601">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4458606447719189" type="Player">
+                            <param id="0" name="Object">Scalable</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="5319245839894932" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="2386494078776824" type="Climber">
+                            <param id="0" name="Instance variable">onStairs</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7508333550780653">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4836769200699246" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="5933743681200927" type="Climber">
+                            <param id="0" name="Instance variable">onStairs</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3811754606287429">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="3077668208002735" type="Climber">
+                            <param id="0" name="Instance variable">onStairs</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="2341292254033866" type="Climber">
+                            <param id="0" name="Vector Y">-500</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="3618165053994433" title="Eventos de colisão">
+            <sub-events>
+                <event-block sid="7616318547794298">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="2032374943868304" type="Enemies">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="8091328802913293" type="Player">
+                            <param id="0" name="Instance variable">life</param>
+                            <param id="1" name="Value">0.05</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8305609441529509">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="839083933295722" type="Enemies">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="8371701319692776" type="Player">
+                            <param id="0" name="Instance variable">life</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

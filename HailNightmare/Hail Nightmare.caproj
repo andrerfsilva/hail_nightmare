@@ -55,9 +55,6 @@
                 <instance-variable name="life" sid="4867138298575531" type="number" />
             </instance-variables>
             <behaviors>
-                <behavior-type name="Platform" sid="7086757871700942">
-                    <behavior id="Platform" />
-                </behavior-type>
                 <behavior-type name="ScrollTo" sid="314426451210904">
                     <behavior id="scrollto" />
                 </behavior-type>
@@ -157,39 +154,8 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="FakePlataform" sid="3103686355653775">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="7162379694100148">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2611184343448065" speed="5">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="FakeGround" sid="8084772061643277">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="5709213135342452">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3556329938974057" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Shadow" sid="2715362229490938">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="3664402502354389">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5192077427093382" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -198,11 +164,6 @@
         </object-type>
         <object-type name="Shadow2" sid="4994044628882664">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="7362272386491244">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3737932655274292" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -211,37 +172,8 @@
         </object-type>
         <object-type name="Shadow3" sid="370118952499406">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="5298720711040264">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2706080230080117" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MouseLight3" sid="2381470727422306">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8410454331510505" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MouseLight4" sid="225386280298394">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519897461239033" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MouseLight5" sid="6109046346424152">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1445924821169754" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -279,16 +211,38 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="MouseLight2" sid="5663115045526695">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724634543000619" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families>
+        <family name="Scalable" plugin-id="Sprite" sid="3568532233825896">
+            <members>
+                <member>Stairs</member>
+            </members>
+        </family>
+        <family name="Climber" plugin-id="Sprite" sid="3568532233825897">
+            <members>
+                <member>Player</member>
+            </members>
+            <instance-variables>
+                <instance-variable comment="Indica se o Climber está ou não em cima de uma escada" name="onStairs" sid="9093344613057836" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="5109785688497791">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Shadows" plugin-id="Sprite" sid="3568532233825899">
+            <members>
+                <member>Shadow</member>
+                <member>Shadow2</member>
+                <member>Shadow3</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Sine" sid="5293226674103573">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </family>
         <family name="Enemies" plugin-id="Sprite" sid="3568532233825898">
             <members>
                 <member>Shadow</member>
@@ -296,7 +250,7 @@
                 <member>Shadow3</member>
             </members>
         </family>
-        <family name="Plataforms" plugin-id="Sprite" sid="3568532233825899">
+        <family name="Plataforms" plugin-id="Sprite" sid="3568532233825900">
             <members>
                 <member>Plataform1</member>
                 <member>Plataform2</member>
