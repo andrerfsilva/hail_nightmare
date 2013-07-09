@@ -16,12 +16,12 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -71,16 +71,8 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="4514233440627839">
+        <object-type name="Plataform1" sid="4514233440627839">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="2470570311283706">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Jumpthru" sid="2880974435975285">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6315788997840522" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -128,48 +120,24 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="3208511891524835">
+        <object-type name="Plataform2" sid="3208511891524835">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="9158938799801291">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Jumpthru" sid="8215586069218318">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9506886440970351" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="8114189589865519">
+        <object-type name="Plataform3" sid="8114189589865519">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="9061963646134772">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Jumpthru" sid="7523973575860529">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4801524206529205" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite7" sid="5023571099595647">
+        <object-type name="Plataform4" sid="5023571099595647">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="7412639611097677">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Jumpthru" sid="1103113654470572">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2059998283274249" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -281,6 +249,44 @@
         <object-type name="Text" sid="9755893690448594">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Comentario" sid="7812794664235681">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Plataform5" sid="8845041385677808">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5409431663391571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Key" sid="1977851077226495">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5612637250282908" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.0390625" />
+                            <point x="0.890625" y="0.109375" />
+                            <point x="0.898438" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.5" y="0.734375" />
+                            <point x="0.0507813" y="0.949219" />
+                            <point x="0.328125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MouseLight2" sid="5663115045526695">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724634543000619" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="3568532233825898">
@@ -289,6 +295,20 @@
                 <member>Shadow2</member>
                 <member>Shadow3</member>
             </members>
+        </family>
+        <family name="Plataforms" plugin-id="Sprite" sid="3568532233825899">
+            <members>
+                <member>Plataform1</member>
+                <member>Plataform2</member>
+                <member>Plataform3</member>
+                <member>Plataform4</member>
+                <member>Plataform5</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="7281363060022323">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
         </family>
     </families>
     <layout-folder expanded="1">
