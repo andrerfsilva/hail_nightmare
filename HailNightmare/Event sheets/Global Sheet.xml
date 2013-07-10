@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Global Sheet</name>
+    <events>
+        <event-group collapsed="1" description="" sid="6772643683932675" title="Eventos globais">
+            <sub-events>
+                <event-block sid="7176215925750598">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="9884308065339991" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="4674896391503046" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2744759288062962">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="3372666020721129" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="933005824487447" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5327203796643251">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1805662820869907" type="Life">
+                            <param id="0" name="Text">&quot;Life: &quot; &amp; Player.life</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="5724336177637635" title="Eventos de shooting">
+            <sub-events>
+                <event-block sid="1414263088900472">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5889958545912148" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8890506962813231" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="2019495600611418" type="Player">
+                            <param id="0" name="Object">Pyro</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="4258974516342252" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7447604273590295">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="4957551067350189" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="5198834100381569" type="Pyro">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="452350801684898">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="706061302037404" type="Pyro" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4318049227310453" type="Pyro" />
+                    </actions>
+                </event-block>
+                <event-block sid="2332380936018169">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="9553742871924778" type="Pyro" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="4661763715456438" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3510044604808624">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1758988043025777" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8707380011865014" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="7394492639959774" type="Player">
+                            <param id="0" name="Object">Telekinesis</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="1370287011813739" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8307068489915937">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="1145051087297439" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8382595160679624" type="Telekinesis">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3961238795006437">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="39731823887808" type="Telekinesis" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6655291323968445" type="Telekinesis" />
+                    </actions>
+                </event-block>
+                <event-block sid="5870466069990523">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="5274174070920803" type="Telekinesis" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="2220696832992376" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

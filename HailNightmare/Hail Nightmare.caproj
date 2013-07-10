@@ -163,7 +163,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="9755893690448594">
+        <object-type name="Life" sid="9755893690448594">
             <plugin id="Text" />
         </object-type>
         <object-type name="Comentario" sid="7812794664235681">
@@ -227,6 +227,36 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
+        <object-type name="Telekinesis" sid="3230623843819378">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="4547704045540036">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="5277333416021296">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1069264256575577" speed="5">
+                    <frame duration="1" hotspotX="0.541667" hotspotY="0.516129">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.611111" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.611111" y="0.870968" />
+                            <point x="0" y="0.258065" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Miss" sid="9800375949673175">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Scalable" plugin-id="Sprite" sid="3568532233825896">
@@ -283,6 +313,7 @@
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>DarkRoom Sheet.xml</event-sheet>
+        <event-sheet>Global Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
