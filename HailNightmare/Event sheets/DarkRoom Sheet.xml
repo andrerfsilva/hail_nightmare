@@ -39,30 +39,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="2386494078776824" type="Climber">
-                            <param id="0" name="Instance variable">onStairs</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7508333550780653">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="4836769200699246" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="5933743681200927" type="Climber">
-                            <param id="0" name="Instance variable">onStairs</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="3811754606287429">
-                    <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="3077668208002735" type="Climber">
-                            <param id="0" name="Instance variable">onStairs</param>
-                        </condition>
-                    </conditions>
-                    <actions>
                         <action behavior="Platform" id="9" name="Set vector Y" sid="2341292254033866" type="Climber">
                             <param id="0" name="Vector Y">-500</param>
                         </action>
@@ -70,7 +46,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="3618165053994433" title="Eventos de colisão">
+        <event-group description="" sid="3618165053994433" title="Eventos de colisão">
             <sub-events>
                 <event-block sid="7616318547794298">
                     <conditions>
@@ -95,6 +71,111 @@
                         <action id="-12" name="Subtract from" sid="8371701319692776" type="Player">
                             <param id="0" name="Instance variable">life</param>
                             <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4542586185884795">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5567401100424347" type="Pyro">
+                            <param id="0" name="Object">Shadows</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7932527883180978" type="Shadows" />
+                        <action id="0" name="Spawn another object" sid="3950664261738097" type="Shadows">
+                            <param id="0" name="Object">Smoke</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="9853645600026174" title="Eventos de shooting">
+            <sub-events>
+                <event-block collapsed="1" sid="1414263088900472">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5889958545912148" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8890506962813231" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="2019495600611418" type="Player">
+                            <param id="0" name="Object">Pyro</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="4258974516342252" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7447604273590295">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="4957551067350189" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="5198834100381569" type="Pyro">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3826586188234832">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7564580101535473" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="3116783824096537" type="Pyro">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2744759288062962">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="3372666020721129" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="933005824487447" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7176215925750598">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="9884308065339991" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="4674896391503046" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="452350801684898">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="706061302037404" type="Pyro" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4318049227310453" type="Pyro" />
+                    </actions>
+                </event-block>
+                <event-block sid="2332380936018169">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="9553742871924778" type="Pyro" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="4661763715456438" type="Player">
+                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>

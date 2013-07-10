@@ -55,8 +55,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <onStairs>false</onStairs>
                         <life>100</life>
+                        <isReloading>false</isReloading>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -77,7 +77,7 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
-                    <blend-mode>5</blend-mode>
+                    <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>375</x>
@@ -86,8 +86,8 @@
                         <width>68</width>
                         <height>113</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.504424751</hotspotY>
+                        <hotspotX>0.485294104</hotspotX>
+                        <hotspotY>0.495575219</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -289,6 +289,40 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Pyro" uid="11">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>26</x>
+                        <y>-106</y>
+                        <z>0</z>
+                        <width>85</width>
+                        <height>51</height>
+                        <depth>0</depth>
+                        <hotspotX>0.586206913</hotspotX>
+                        <hotspotY>0.512499988</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -353,8 +387,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1024</x>
-                        <y>607</y>
+                        <x>1073</x>
+                        <y>615</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -427,13 +461,52 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1041</x>
-                        <y>210</y>
+                        <x>930</x>
+                        <y>239</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Smoke" uid="12">
+                    <properties>
+                        <rate>50</rate>
+                        <spray-cone>60</spray-cone>
+                        <type>One-shot</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>200</speed>
+                        <size>32</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>0</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>800</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>1</timeout>
+                    </properties>
+                    <blend-mode>1</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>581</x>
+                        <y>-111</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
