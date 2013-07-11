@@ -257,11 +257,75 @@
         <object-type name="Miss" sid="9800375949673175">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Pipe2" sid="8785609717380225">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7341962874067339" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Drop Position" x="0.489011" y="0.98913" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.697802" y="0" />
+                            <point x="0.478022" y="0.961957" />
+                            <point x="0" y="0.896739" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pipe" sid="3497484996454225">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7586977647970038" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Drop Position" x="0.489011" y="0.98913" />
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.697802" y="0" />
+                            <point x="0.478022" y="0.961957" />
+                            <point x="0" y="0.896739" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WaterDrop" sid="7252185992370749">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground2" sid="286278963037043">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Stairs2" sid="7293947194178966">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="6133521177243201">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2131477994263545" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
+        <family name="Pipes" plugin-id="Sprite" sid="3568532233825895">
+            <members>
+                <member>Pipe</member>
+                <member>Pipe2</member>
+            </members>
+        </family>
         <family name="Scalable" plugin-id="Sprite" sid="3568532233825896">
             <members>
                 <member>Stairs</member>
+                <member>Stairs2</member>
             </members>
         </family>
         <family name="Climber" plugin-id="Sprite" sid="3568532233825897">
