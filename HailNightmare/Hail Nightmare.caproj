@@ -55,9 +55,9 @@
         <object-type name="Player" sid="5330770759272557">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="life" sid="4867138298575531" type="number" />
-                <instance-variable name="isReloading" sid="8206243929054003" type="boolean" />
-                <instance-variable name="PirocineseHabilitada" sid="9074657789727107" type="boolean" />
+                <instance-variable comment="Medidor de hit poits. Quando chega a zero o personagem morre." name="Life" sid="4867138298575531" type="number" />
+                <instance-variable comment="Usada para limitar a quantidade de tiros." name="Reloading" sid="8206243929054003" type="boolean" />
+                <instance-variable comment="Pirocinese só é aprendida com a foto do holocausto." name="PyrokinesisEnabled" sid="9074657789727107" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="ScrollTo" sid="314426451210904">

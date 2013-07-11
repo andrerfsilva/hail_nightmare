@@ -68,7 +68,7 @@
                     </conditions>
                     <actions>
                         <action id="-12" name="Subtract from" sid="8091328802913293" type="Player">
-                            <param id="0" name="Instance variable">life</param>
+                            <param id="0" name="Instance variable">Life</param>
                             <param id="1" name="Value">0.05</param>
                         </action>
                     </actions>
@@ -81,7 +81,7 @@
                     </conditions>
                     <actions>
                         <action id="-12" name="Subtract from" sid="8371701319692776" type="Player">
-                            <param id="0" name="Instance variable">life</param>
+                            <param id="0" name="Instance variable">Life</param>
                             <param id="1" name="Value">10</param>
                         </action>
                     </actions>
@@ -133,7 +133,7 @@
             </conditions>
             <actions>
                 <action id="-12" name="Subtract from" sid="9020528309216773" type="Player">
-                    <param id="0" name="Instance variable">life</param>
+                    <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">10</param>
                 </action>
             </actions>

@@ -13,7 +13,7 @@
             </conditions>
             <actions>
                 <action id="-13" name="Set boolean" sid="6028465640201621" type="Player">
-                    <param id="0" name="Instance variable">PirocineseHabilitada</param>
+                    <param id="0" name="Instance variable">PyrokinesisEnabled</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="4470927687996036" type="HolocaustPicture" />
@@ -101,7 +101,7 @@
             <actions>
                 <action id="-9" name="Destroy" sid="7068983159821163" type="BookMonster" />
                 <action id="-12" name="Subtract from" sid="2586286653273947" type="Player">
-                    <param id="0" name="Instance variable">life</param>
+                    <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">10</param>
                 </action>
                 <action behavior="ScrollTo" id="0" name="Shake" sid="2127259346724395" type="Player">

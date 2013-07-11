@@ -49,7 +49,10 @@
                             <param id="0" name="Key">65 (A)</param>
                         </condition>
                         <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8890506962813231" type="Player">
-                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="0" name="Instance variable">Reloading</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="7945556048729232" type="Player">
+                            <param id="0" name="Instance variable">PyrokinesisEnabled</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -59,7 +62,7 @@
                             <param id="2" name="Image point">1</param>
                         </action>
                         <action id="-13" name="Set boolean" sid="4258974516342252" type="Player">
-                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="0" name="Instance variable">Reloading</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -90,7 +93,7 @@
                     </conditions>
                     <actions>
                         <action id="-13" name="Set boolean" sid="4661763715456438" type="Player">
-                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="0" name="Instance variable">Reloading</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
@@ -101,7 +104,7 @@
                             <param id="0" name="Key">83 (S)</param>
                         </condition>
                         <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8707380011865014" type="Player">
-                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="0" name="Instance variable">Reloading</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -111,7 +114,7 @@
                             <param id="2" name="Image point">1</param>
                         </action>
                         <action id="-13" name="Set boolean" sid="1370287011813739" type="Player">
-                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="0" name="Instance variable">Reloading</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -142,7 +145,7 @@
                     </conditions>
                     <actions>
                         <action id="-13" name="Set boolean" sid="2220696832992376" type="Player">
-                            <param id="0" name="Instance variable">isReloading</param>
+                            <param id="0" name="Instance variable">Reloading</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>

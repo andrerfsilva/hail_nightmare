@@ -2759,9 +2759,9 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <life>100</life>
-                        <isReloading>false</isReloading>
-                        <PirocineseHabilitada>false</PirocineseHabilitada>
+                        <Life>100</Life>
+                        <Reloading>false</Reloading>
+                        <PyrokinesisEnabled>false</PyrokinesisEnabled>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
