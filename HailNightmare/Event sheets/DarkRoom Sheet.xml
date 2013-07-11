@@ -31,7 +31,7 @@
                         <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="9234268412678461" type="MouseLight">
+                        <action id="-3" name="Set position" sid="9234268412678461" type="PlayerLight">
                             <param id="0" name="X">Player.X</param>
                             <param id="1" name="Y">Player.y</param>
                         </action>
@@ -39,7 +39,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="2950008155696139" title="Eventos de escalada">
+        <event-group collapsed="1" description="" sid="2950008155696139" title="Eventos de escalada">
             <sub-events>
                 <event-block sid="6834089806134601">
                     <conditions>
@@ -99,44 +99,47 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="Image point">0</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="2304491637403829" type="Shadows" />
+                        <action id="-9" name="Destroy" sid="7643879760821118" type="Pyro" />
+                    </actions>
+                </event-block>
+                <event-block sid="6240278222053161">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1769108097093963" type="Telekinesis">
+                            <param id="0" name="Object">Shadows</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7827862610211243" type="Miss">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="5909645949724151" type="Miss">
+                            <param id="0" name="Object">Telekinesis</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1736305721402416" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7797136379218065" type="Miss">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8447167040085816">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8003966213720526" type="Player">
+                            <param id="0" name="Object">WaterDrop</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="9020528309216773" type="Player">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9575327981082718" type="WaterDrop" />
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="6240278222053161">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1769108097093963" type="Telekinesis">
-                    <param id="0" name="Object">Shadows</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="7827862610211243" type="Miss">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-4" name="Set position to another object" sid="5909645949724151" type="Miss">
-                    <param id="0" name="Object">Telekinesis</param>
-                    <param id="1" name="Image point (optional)">0</param>
-                </action>
-                <action id="-16" name="Wait" sid="1736305721402416" type="System">
-                    <param id="0" name="Seconds">0.5</param>
-                </action>
-                <action id="-15" name="Set visible" sid="7797136379218065" type="Miss">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8447167040085816">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="8003966213720526" type="Player">
-                    <param id="0" name="Object">WaterDrop</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="9020528309216773" type="Player">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

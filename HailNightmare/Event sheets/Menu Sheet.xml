@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu Sheet</name>
+    <events>
+        <event-group description="" sid="102981972601909" title="Eventos dos botões">
+            <sub-events>
+                <event-block sid="100538592971135">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="1316500109409694" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">BackToMainMenu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="6186261815274518" type="System">
+                            <param id="0" name="Layout">&quot;GameMenu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4806104910434557">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="6661782805824137" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">HelpButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="8381614340858542" type="System">
+                            <param id="0" name="Layout">&quot;Help&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7972562738672605">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="7330768581552352" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">StartGameButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="4866112513003848" type="System">
+                            <param id="0" name="Layout">&quot;DarkRoom&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="7730056167644105">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1599577092803382" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">RestartGame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="4327479251633795" type="System">
+                    <param id="0" name="Layout">&quot;DarkRoom&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="3355352818133969" type="Player">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

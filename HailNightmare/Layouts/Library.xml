@@ -276,7 +276,7 @@
                         <width>205</width>
                         <height>75</height>
                         <depth>0</depth>
-                        <hotspotX>0.500842988</hotspotX>
+                        <hotspotX>0.500843167</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -2761,7 +2761,7 @@
                     <instance-variables>
                         <Life>100</Life>
                         <Reloading>false</Reloading>
-                        <PyrokinesisEnabled>false</PyrokinesisEnabled>
+                        <PyrokinesisEnabled>true</PyrokinesisEnabled>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
