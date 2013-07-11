@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="7151081136219688">
+        <layer name="Background" sid="7151081136219688">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -57,6 +57,7 @@
                     <instance-variables>
                         <life>100</life>
                         <isReloading>false</isReloading>
+                        <PirocineseHabilitada>false</PirocineseHabilitada>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -83,11 +84,11 @@
                         <x>375</x>
                         <y>343</y>
                         <z>0</z>
-                        <width>68</width>
-                        <height>113</height>
+                        <width>108</width>
+                        <height>103</height>
                         <depth>0</depth>
-                        <hotspotX>0.485294104</hotspotX>
-                        <hotspotY>0.495575219</hotspotY>
+                        <hotspotX>0.481481493</hotspotX>
+                        <hotspotY>0.495145619</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -468,7 +469,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 1" sid="1750369830001717">
+        <layer name="Game Layer" sid="1750369830001717">
             <initially-visible>1</initially-visible>
             <background-color>0,0,0</background-color>
             <transparent>0</transparent>
@@ -684,7 +685,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 2" sid="8735747689986164">
+        <layer name="HUD" sid="8735747689986164">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>

@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global Sheet</name>
     <events>
-        <event-group collapsed="1" description="" sid="6772643683932675" title="Eventos globais">
+        <event-group description="" sid="6772643683932675" title="Eventos globais">
             <sub-events>
                 <event-block sid="7176215925750598">
                     <conditions>
@@ -41,7 +41,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="5724336177637635" title="Eventos de shooting">
+        <event-group description="" sid="5724336177637635" title="Eventos de shooting">
             <sub-events>
                 <event-block sid="1414263088900472">
                     <conditions>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Library Sheet</name>
+    <events>
+        <include>Global Sheet</include>
+        <comment>O objetivo da fase da biblioteca é aprender o poder da pirocinese. Basta encostar no quadro do holocausto.</comment>
+        <event-block sid="4386423791546225">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8750173038673297" type="Player">
+                    <param id="0" name="Object">Holocausto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="6028465640201621" type="Player">
+                    <param id="0" name="Instance variable">PirocineseHabilitada</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4470927687996036" type="Holocausto" />
+            </actions>
+        </event-block>
+        <comment>Os livros fantasmas começam a fase no estado não agressivo. Nesse estado eles não causam dano, e também não podem ser destruídos. A cada 5 a 10 segundos (distribuição uniforme) o livro mais próximo do jogador fica agressivo e começa a se movimentar contra ele.</comment>
+        <event-block sid="6727086846269478">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2793835159701388" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="8785900125082829" type="BookMonster">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="9810407434396752" type="BookMonster">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="1782200589150087" type="BookMonster">
+                    <param id="0" name="Instance variable">agressivo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2086195367992254">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7242441928522702" type="System">
+                    <param id="0" name="Interval (seconds)">random(5, 10)</param>
+                </condition>
+                <condition id="-15" name="Pick nearest/furthest" sid="7129770099433668" type="BookMonster">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="X">Player.X</param>
+                    <param id="2" name="Y">Player.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="1272747910134964" type="BookMonster">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="5299800844419753" type="BookMonster">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="1684834416824556" type="BookMonster">
+                    <param id="0" name="Instance variable">agressivo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2246158268436021">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4436489453669443" type="System" />
+                <condition id="-8" name="Is boolean instance variable set" sid="3406857942076194" type="BookMonster">
+                    <param id="0" name="Instance variable">agressivo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="5745884031338965" type="BookMonster">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8408012313603465">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1768043129908981" type="BookMonster">
+                    <param id="0" name="Object">Pyro</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="7634140986152521" type="BookMonster">
+                    <param id="0" name="Instance variable">agressivo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8285181906080405" type="BookMonster" />
+                <action id="-9" name="Destroy" sid="559862295681914" type="Pyro" />
+            </actions>
+        </event-block>
+        <event-block sid="315037570433289">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8756056661134455" type="Player">
+                    <param id="0" name="Object">BookMonster</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="5614353452043632" type="BookMonster">
+                    <param id="0" name="Instance variable">agressivo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7068983159821163" type="BookMonster" />
+                <action id="-12" name="Subtract from" sid="2586286653273947" type="Player">
+                    <param id="0" name="Instance variable">life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action behavior="ScrollTo" id="0" name="Shake" sid="2127259346724395" type="Player">
+                    <param id="0" name="Magnitude">10</param>
+                    <param id="1" name="Duration">0.4</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

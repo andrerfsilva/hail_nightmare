@@ -18,13 +18,13 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -57,6 +57,7 @@
             <instance-variables>
                 <instance-variable name="life" sid="4867138298575531" type="number" />
                 <instance-variable name="isReloading" sid="8206243929054003" type="boolean" />
+                <instance-variable name="PirocineseHabilitada" sid="9074657789727107" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="ScrollTo" sid="314426451210904">
@@ -68,8 +69,18 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6050193590294477" speed="5">
-                    <frame duration="1" hotspotX="0.485294" hotspotY="0.495575">
-                        <image-point name="ShootingPoint" x="1.47059" y="0.513274" />
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.495146">
+                        <image-point name="ShootingPoint" x="1.47222" y="0.514563" />
+                        <collision-poly>
+                            <point x="0.240741" y="0.252427" />
+                            <point x="0.5" y="0.0776699" />
+                            <point x="0.685185" y="0.330097" />
+                            <point x="0.944444" y="0.495146" />
+                            <point x="0.703704" y="0.68932" />
+                            <point x="0.5" y="0.961165" />
+                            <point x="0.194444" y="0.796117" />
+                            <point x="0.0462963" y="0.495146" />
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -314,6 +325,62 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LibraryBackground" sid="5696995908993629">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="BookMonster" sid="1272673656289827">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="O livro saiu da estante para atacar." name="agressivo" sid="6453945386318482" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="6286291507711261">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="4442078040806885">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9309538410446624" speed="5">
+                    <frame duration="1" hotspotX="0.460317" hotspotY="0.479167" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Holocausto" sid="1295604765752677">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9038573335227738" speed="5">
+                    <frame duration="1" hotspotX="0.500843" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Chão" sid="8122969387565027">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8255950046238783">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5155138372306816" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fireball" sid="981908986355205">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="2639579885595054">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="7918168928527186">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="Pipes" plugin-id="Sprite" sid="3568532233825895">
@@ -374,10 +441,12 @@
     </families>
     <layout-folder expanded="1">
         <layout>DarkRoom.xml</layout>
+        <layout>Library.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>DarkRoom Sheet.xml</event-sheet>
         <event-sheet>Global Sheet.xml</event-sheet>
+        <event-sheet>Library Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
