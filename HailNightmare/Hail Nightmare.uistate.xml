@@ -12,6 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>Library</layout>
         <layout>DarkRoom</layout>
+        <layout>GameOver</layout>
         <event-sheet active="1">Global Sheet</event-sheet>
         <event-sheet>Library Sheet</event-sheet>
         <event-sheet>DarkRoom Sheet</event-sheet>

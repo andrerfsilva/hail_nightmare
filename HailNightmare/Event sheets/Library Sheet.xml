@@ -32,7 +32,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-13" name="Set boolean" sid="1782200589150087" type="BookMonster">
-                    <param id="0" name="Instance variable">agressivo</param>
+                    <param id="0" name="Instance variable">Aggressive</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -56,7 +56,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-13" name="Set boolean" sid="1684834416824556" type="BookMonster">
-                    <param id="0" name="Instance variable">agressivo</param>
+                    <param id="0" name="Instance variable">Aggressive</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -65,7 +65,7 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="4436489453669443" type="System" />
                 <condition id="-8" name="Is boolean instance variable set" sid="3406857942076194" type="BookMonster">
-                    <param id="0" name="Instance variable">agressivo</param>
+                    <param id="0" name="Instance variable">Aggressive</param>
                 </condition>
             </conditions>
             <actions>
@@ -75,27 +75,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="8408012313603465">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1768043129908981" type="BookMonster">
-                    <param id="0" name="Object">Pyro</param>
-                </condition>
-                <condition id="-8" name="Is boolean instance variable set" sid="7634140986152521" type="BookMonster">
-                    <param id="0" name="Instance variable">agressivo</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="8285181906080405" type="BookMonster" />
-                <action id="-9" name="Destroy" sid="559862295681914" type="Pyro" />
-            </actions>
-        </event-block>
         <event-block sid="315037570433289">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8756056661134455" type="Player">
                     <param id="0" name="Object">BookMonster</param>
                 </condition>
                 <condition id="-8" name="Is boolean instance variable set" sid="5614353452043632" type="BookMonster">
-                    <param id="0" name="Instance variable">agressivo</param>
+                    <param id="0" name="Instance variable">Aggressive</param>
                 </condition>
             </conditions>
             <actions>
@@ -109,6 +95,34 @@
                     <param id="1" name="Duration">0.4</param>
                     <param id="2" name="Mode">0</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="8408012313603465">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1768043129908981" type="BookMonster">
+                    <param id="0" name="Object">Pyro</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="7634140986152521" type="BookMonster">
+                    <param id="0" name="Instance variable">Aggressive</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8285181906080405" type="BookMonster" />
+                <action id="-9" name="Destroy" sid="559862295681914" type="Pyro" />
+            </actions>
+        </event-block>
+        <event-block sid="9054370752797449">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7334848519770493" type="BookMonster">
+                    <param id="0" name="Object">Telekinesis</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="2308348243564473" type="BookMonster">
+                    <param id="0" name="Instance variable">Aggressive</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1505966329212292" type="BookMonster" />
+                <action id="-9" name="Destroy" sid="1040845960012834" type="Telekinesis" />
             </actions>
         </event-block>
     </events>

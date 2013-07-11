@@ -35,7 +35,22 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="1805662820869907" type="Life">
-                            <param id="0" name="Text">&quot;Life: &quot; &amp; Player.life</param>
+                            <param id="0" name="Text">&quot;Life: &quot; &amp; Player.Life</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6133290541519112">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8524662421336811" type="Player">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9359333285585126" type="Player" />
+                        <action id="-2" name="Go to layout" sid="5787634337362812" type="System">
+                            <param id="0" name="Layout">GameOver</param>
                         </action>
                     </actions>
                 </event-block>

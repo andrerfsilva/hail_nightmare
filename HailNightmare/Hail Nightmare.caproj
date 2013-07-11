@@ -332,7 +332,7 @@
         <object-type name="BookMonster" sid="1272673656289827">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable comment="O livro saiu da estante para atacar." name="agressivo" sid="6453945386318482" type="boolean" />
+                <instance-variable comment="Indica se o livro saiu da estante para atacar o jogador." name="Aggressive" sid="6453945386318482" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Sine" sid="6286291507711261">
@@ -393,6 +393,10 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="GameOverBackground" sid="9083331152177327">
+            <plugin id="TiledBg" />
+            <texture />
         </object-type>
     </object-folder>
     <families>
@@ -455,6 +459,7 @@
     <layout-folder expanded="1">
         <layout>DarkRoom.xml</layout>
         <layout>Library.xml</layout>
+        <layout>GameOver.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>DarkRoom Sheet.xml</event-sheet>
