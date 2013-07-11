@@ -18,10 +18,10 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -548,6 +548,31 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="CarlasCellBackground" sid="6041269410173771">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="CarlasCellFloor" sid="233062161118743">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1656233542150562">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5405463888635319" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DarkRoomPassage" sid="7755848353414052">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2165945248146384" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Pipes" plugin-id="Sprite" sid="3568532233825895">
@@ -612,12 +637,14 @@
         <layout>GameOver.xml</layout>
         <layout>GameMenu.xml</layout>
         <layout>Help.xml</layout>
+        <layout>Carla&apos;s Cell.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>DarkRoom Sheet.xml</event-sheet>
         <event-sheet>Global Sheet.xml</event-sheet>
         <event-sheet>Library Sheet.xml</event-sheet>
         <event-sheet>Menu Sheet.xml</event-sheet>
+        <event-sheet>Carla&apos;s Cell Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
