@@ -348,7 +348,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Holocausto" sid="1295604765752677">
+        <object-type name="HolocaustPicture" sid="1295604765752677">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9038573335227738" speed="5">
@@ -356,7 +356,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Chão" sid="8122969387565027">
+        <object-type name="LibraryFloor" sid="8122969387565027">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="8255950046238783">
@@ -380,6 +380,19 @@
                 </behavior-type>
             </behaviors>
             <texture />
+        </object-type>
+        <object-type name="LibraryPlatform" sid="2689201576221053">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="815585969998066">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7388643645548481" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>

@@ -8,7 +8,7 @@
         <event-block sid="4386423791546225">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8750173038673297" type="Player">
-                    <param id="0" name="Object">Holocausto</param>
+                    <param id="0" name="Object">HolocaustPicture</param>
                 </condition>
             </conditions>
             <actions>
@@ -16,7 +16,7 @@
                     <param id="0" name="Instance variable">PirocineseHabilitada</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="4470927687996036" type="Holocausto" />
+                <action id="-9" name="Destroy" sid="4470927687996036" type="HolocaustPicture" />
             </actions>
         </event-block>
         <comment>Os livros fantasmas começam a fase no estado não agressivo. Nesse estado eles não causam dano, e também não podem ser destruídos. A cada 5 a 10 segundos (distribuição uniforme) o livro mais próximo do jogador fica agressivo e começa a se movimentar contra ele.</comment>
