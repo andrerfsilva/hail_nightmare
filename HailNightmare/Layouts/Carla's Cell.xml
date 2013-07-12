@@ -74,7 +74,6 @@
                     <instance-variables>
                         <Life>100</Life>
                         <Reloading>false</Reloading>
-                        <PyrokinesisEnabled>true</PyrokinesisEnabled>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -99,7 +98,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>345</x>
-                        <y>295</y>
+                        <y>304</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>

@@ -57,7 +57,6 @@
                     <instance-variables>
                         <Life>100</Life>
                         <Reloading>false</Reloading>
-                        <PyrokinesisEnabled>true</PyrokinesisEnabled>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

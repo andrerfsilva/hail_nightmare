@@ -18,8 +18,8 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -65,7 +65,6 @@
             <instance-variables>
                 <instance-variable comment="Medidor de hit poits. Quando chega a zero o personagem morre." name="Life" sid="4867138298575531" type="number" />
                 <instance-variable comment="Usada para limitar a quantidade de tiros." name="Reloading" sid="8206243929054003" type="boolean" />
-                <instance-variable comment="Pirocinese só é aprendida com a foto do holocausto." name="PyrokinesisEnabled" sid="9074657789727107" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="ScrollTo" sid="314426451210904">
