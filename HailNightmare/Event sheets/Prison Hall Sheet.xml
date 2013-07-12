@@ -24,12 +24,12 @@
         <event-block sid="6519057558699234">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8211698575424587" type="Player">
-                    <param id="0" name="Object">LibraryDoor</param>
+                    <param id="0" name="Object">CorridorDoor</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="885555393056494" type="System">
-                    <param id="0" name="Layout">Library</param>
+                    <param id="0" name="Layout">Corridor</param>
                 </action>
                 <action id="-9" name="Set value" sid="5424874010959396" type="System">
                     <param id="0" name="Variable">LastLayout</param>
@@ -59,7 +59,7 @@
                 <condition id="-14" name="Compare variable" sid="7754744469335406" type="System">
                     <param id="0" name="Variable">LastLayout</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">&quot;Library&quot;</param>
+                    <param id="2" name="Value">&quot;Corridor&quot;</param>
                 </condition>
             </conditions>
             <actions>
