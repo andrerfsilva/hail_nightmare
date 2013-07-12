@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Prison Hall Sheet</name>
+    <events>
+        <include>Global Sheet</include>
+        <comment>Conexões com as outras salas.</comment>
+        <event-block sid="9307498512034015">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1770720401052747" type="Player">
+                    <param id="0" name="Object">CarlasCellDoor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4926364194094672" type="System">
+                    <param id="0" name="Layout">Carla&apos;s Cell</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6519057558699234">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8211698575424587" type="Player">
+                    <param id="0" name="Object">LibraryDoor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="885555393056494" type="System">
+                    <param id="0" name="Layout">Library</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

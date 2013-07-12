@@ -125,5 +125,18 @@
                 <action id="-9" name="Destroy" sid="1040845960012834" type="Telekinesis" />
             </actions>
         </event-block>
+        <comment>Conexões com as outras salas.</comment>
+        <event-block sid="355019034070165">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3048606433578791" type="Player">
+                    <param id="0" name="Object">LibraryPrisonHallDoor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2201202653632047" type="System">
+                    <param id="0" name="Layout">Prison Hall</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

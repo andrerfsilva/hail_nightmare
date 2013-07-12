@@ -573,6 +573,71 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="PrisonHallDoor" sid="3930596288752406">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2989236030115832" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="6945470791427878">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4379967355121246" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PrisonHallBackground" sid="5792342925503133">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="PrisonHallFloor" sid="5223319026791044">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6578533744175873">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6341609101077833" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CarlasCellDoor" sid="8170804448289145">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6758345521039044" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LibraryDoor" sid="8477625220170991">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8792553023969661" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OfficeDoor" sid="8465487614878944">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582125891067313" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LibraryPrisonHallDoor" sid="1395619243607012">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1158497637450241" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Pipes" plugin-id="Sprite" sid="3568532233825895">
@@ -638,6 +703,7 @@
         <layout>GameMenu.xml</layout>
         <layout>Help.xml</layout>
         <layout>Carla&apos;s Cell.xml</layout>
+        <layout>Prison Hall.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>DarkRoom Sheet.xml</event-sheet>
@@ -645,6 +711,7 @@
         <event-sheet>Library Sheet.xml</event-sheet>
         <event-sheet>Menu Sheet.xml</event-sheet>
         <event-sheet>Carla&apos;s Cell Sheet.xml</event-sheet>
+        <event-sheet>Prison Hall Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
