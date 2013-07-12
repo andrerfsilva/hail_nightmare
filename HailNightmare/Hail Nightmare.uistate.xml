@@ -10,11 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML 5" />
     </configurations>
     <open-tabs>
-        <layout>Corridor</layout>
-        <layout>Carla&apos;s Cell</layout>
+        <layout>DarkRoom</layout>
         <layout>Library</layout>
+        <layout>Carla&apos;s Cell</layout>
+        <layout>Prison Hall</layout>
+        <layout active="1">Corridor</layout>
+        <event-sheet>DarkRoom Sheet</event-sheet>
+        <event-sheet>Global Sheet</event-sheet>
         <event-sheet>Corridor Sheet</event-sheet>
-        <event-sheet active="1">Library Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,6 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
+        <family expanded="0" name="ToxicElements" />
         <family expanded="0" name="Pipes" />
         <family expanded="0" name="Scalable" />
         <family expanded="0" name="Climber" />

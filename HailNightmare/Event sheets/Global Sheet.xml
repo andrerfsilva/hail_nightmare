@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="PyrokinesisEnabled" sid="808177754518235" static="0" type="number">0</variable>
         <variable constant="0" name="LastLayout" sid="896027254131104" static="0" type="text">Game Menu</variable>
-        <event-group description="" sid="6772643683932675" title="Eventos globais">
+        <event-group collapsed="1" description="" sid="6772643683932675" title="Eventos globais">
             <sub-events>
                 <event-block sid="7176215925750598">
                     <conditions>
@@ -58,7 +58,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="5724336177637635" title="Eventos de shooting">
+        <event-group collapsed="1" description="" sid="5724336177637635" title="Eventos de shooting">
             <sub-events>
                 <event-block sid="1414263088900472">
                     <conditions>
@@ -166,6 +166,25 @@
                         <action id="-13" name="Set boolean" sid="2220696832992376" type="Player">
                             <param id="0" name="Instance variable">Reloading</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="8257575794434735" title="Eventos de escalada">
+            <sub-events>
+                <event-block sid="6834089806134601">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4458606447719189" type="Player">
+                            <param id="0" name="Object">Scalable</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="5319245839894932" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="2341292254033866" type="Climber">
+                            <param id="0" name="Vector Y">-500</param>
                         </action>
                     </actions>
                 </event-block>

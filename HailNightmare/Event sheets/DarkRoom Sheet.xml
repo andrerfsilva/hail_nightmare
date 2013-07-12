@@ -39,25 +39,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="2950008155696139" title="Eventos de escalada">
-            <sub-events>
-                <event-block sid="6834089806134601">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="4458606447719189" type="Player">
-                            <param id="0" name="Object">Scalable</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="5319245839894932" type="Keyboard">
-                            <param id="0" name="Key">38 (Up arrow)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="9" name="Set vector Y" sid="2341292254033866" type="Climber">
-                            <param id="0" name="Vector Y">-500</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="" sid="3618165053994433" title="Eventos de colisão">
             <sub-events>
                 <event-block sid="7616318547794298">
@@ -128,7 +109,7 @@
                 <event-block sid="8447167040085816">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="8003966213720526" type="Player">
-                            <param id="0" name="Object">WaterDrop</param>
+                            <param id="0" name="Object">ToxicElements</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -136,7 +117,6 @@
                             <param id="0" name="Instance variable">Life</param>
                             <param id="1" name="Value">10</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="9575327981082718" type="WaterDrop" />
                     </actions>
                 </event-block>
             </sub-events>

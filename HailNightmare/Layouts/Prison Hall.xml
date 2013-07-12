@@ -122,10 +122,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>85</x>
+                        <x>71.5</x>
                         <y>400.5</y>
                         <z>0</z>
-                        <width>148</width>
+                        <width>121</width>
                         <height>39</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -147,10 +147,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>326.5</x>
+                        <x>339.5</x>
                         <y>398</y>
                         <z>0</z>
-                        <width>109</width>
+                        <width>83</width>
                         <height>39</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -197,8 +197,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1193.5</x>
-                        <y>750</y>
+                        <x>1198</x>
+                        <y>748</y>
                         <z>0</z>
                         <width>361</width>
                         <height>96</height>
@@ -362,6 +362,56 @@
                         <z>0</z>
                         <width>59</width>
                         <height>243</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stairs5" uid="145">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Jumpthru" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>217</x>
+                        <y>599</y>
+                        <z>0</z>
+                        <width>119</width>
+                        <height>388</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stairs6" uid="146">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Jumpthru" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>950</x>
+                        <y>525</y>
+                        <z>0</z>
+                        <width>88</width>
+                        <height>534</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
