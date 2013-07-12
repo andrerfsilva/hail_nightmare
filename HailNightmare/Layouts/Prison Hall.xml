@@ -369,7 +369,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Stairs5" uid="145">
+                <instance type="Stairs" uid="146">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -382,11 +382,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>217</x>
-                        <y>599</y>
+                        <x>216</x>
+                        <y>590.5</y>
                         <z>0</z>
-                        <width>119</width>
-                        <height>388</height>
+                        <width>108</width>
+                        <height>384</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -394,7 +394,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Stairs6" uid="146">
+                <instance type="Stairs" uid="149">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -407,11 +407,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>950</x>
-                        <y>525</y>
+                        <x>945</x>
+                        <y>522</y>
                         <z>0</z>
-                        <width>88</width>
-                        <height>534</height>
+                        <width>82</width>
+                        <height>535</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

@@ -19,9 +19,9 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -92,7 +92,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Plataform1" sid="4514233440627839">
+        <object-type name="DarkRoomPlataform" sid="4514233440627839">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6315788997840522" speed="5">
@@ -100,30 +100,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="3351134265647319">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
         <object-type name="Keyboard" sid="1685849411953899">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Plataform2" sid="3208511891524835">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9506886440970351" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Plataform3" sid="8114189589865519">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4801524206529205" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Ground" sid="5023571099595647">
+        <object-type name="DarkRoomGround" sid="5023571099595647">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2059998283274249" speed="5">
@@ -148,22 +128,6 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5192077427093382" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Shadow2" sid="4994044628882664">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3737932655274292" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Shadow3" sid="370118952499406">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2706080230080117" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -251,7 +215,7 @@
         <object-type name="Miss" sid="9800375949673175">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Pipe2" sid="8785609717380225">
+        <object-type name="Pipe" sid="8785609717380225">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7341962874067339" speed="5">
@@ -272,19 +236,6 @@
         <object-type name="WaterDrop" sid="7252185992370749">
             <plugin id="Particles" />
             <texture />
-        </object-type>
-        <object-type name="Stairs2" sid="7293947194178966">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="6133521177243201">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2131477994263545" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="LibraryBackground" sid="5696995908993629">
             <plugin id="TiledBg" />
@@ -470,14 +421,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="GameStartLight2" sid="8904607319261635">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1451072172637425" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="GameStartLight" sid="4119150206326255">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
@@ -639,14 +582,6 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Plataform6" sid="4487807185911519">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7935065181804601" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="DarkRoomBackground" sid="9194196718755045">
             <plugin id="TiledBg" />
             <texture />
@@ -655,58 +590,6 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9441596470887522" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Stairs3" sid="6920805178348187">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="9538924644129185">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2307555387944108" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Stairs4" sid="4075487293516592">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="1187447947890017">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5074265508857338" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Stairs5" sid="7271181534808926">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="5237545746009799">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1989858053025787" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Stairs6" sid="2314437204515547">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="4342229345167878">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5972046805495522" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -721,17 +604,12 @@
         </family>
         <family name="Pipes" plugin-id="Sprite" sid="3568532233825895">
             <members>
-                <member>Pipe2</member>
+                <member>Pipe</member>
             </members>
         </family>
         <family name="Scalable" plugin-id="Sprite" sid="3568532233825896">
             <members>
                 <member>Stairs</member>
-                <member>Stairs2</member>
-                <member>Stairs3</member>
-                <member>Stairs4</member>
-                <member>Stairs5</member>
-                <member>Stairs6</member>
             </members>
         </family>
         <family name="Climber" plugin-id="Sprite" sid="3568532233825897">
@@ -747,8 +625,6 @@
         <family name="Shadows" plugin-id="Sprite" sid="3568532233825899">
             <members>
                 <member>Shadow</member>
-                <member>Shadow2</member>
-                <member>Shadow3</member>
             </members>
             <behaviors>
                 <behavior-type name="Sine" sid="5293226674103573">
@@ -759,17 +635,12 @@
         <family name="Enemies" plugin-id="Sprite" sid="3568532233825898">
             <members>
                 <member>Shadow</member>
-                <member>Shadow2</member>
-                <member>Shadow3</member>
             </members>
         </family>
         <family name="Plataforms" plugin-id="Sprite" sid="3568532233825900">
             <members>
-                <member>Ground</member>
-                <member>Plataform1</member>
-                <member>Plataform2</member>
-                <member>Plataform3</member>
-                <member>Plataform6</member>
+                <member>DarkRoomGround</member>
+                <member>DarkRoomPlataform</member>
             </members>
             <behaviors>
                 <behavior-type name="Jumpthru" sid="7281363060022323">

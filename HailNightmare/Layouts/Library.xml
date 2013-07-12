@@ -2818,7 +2818,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Stairs3" uid="20">
+                <instance type="Stairs" uid="144">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2831,11 +2831,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1517</x>
-                        <y>839.5</y>
+                        <x>1518.5</x>
+                        <y>853.5</y>
                         <z>0</z>
-                        <width>90</width>
-                        <height>268</height>
+                        <width>91</width>
+                        <height>265</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

@@ -139,7 +139,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>180</x>
-                        <y>85</y>
+                        <y>94</y>
                         <z>0</z>
                         <width>270</width>
                         <height>33</height>
@@ -238,7 +238,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="GameStartLight2" uid="114">
+                <instance type="GameStartLight" uid="114">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -248,8 +248,8 @@
                     <blend-mode>8</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>318</x>
-                        <y>247</y>
+                        <x>317</x>
+                        <y>218</y>
                         <z>0</z>
                         <width>800</width>
                         <height>800</height>
