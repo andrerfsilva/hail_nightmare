@@ -11,11 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>Carla&apos;s Cell</layout>
-        <layout>Prison Hall</layout>
+        <layout active="1">Prison Hall</layout>
         <layout>Library</layout>
         <event-sheet>Carla&apos;s Cell Sheet</event-sheet>
         <event-sheet>Prison Hall Sheet</event-sheet>
-        <event-sheet active="1">Library Sheet</event-sheet>
+        <event-sheet>Library Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

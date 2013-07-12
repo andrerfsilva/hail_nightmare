@@ -2797,7 +2797,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="LibraryPrisonHallDoor" uid="132">
+                <instance type="LPrisonHallDoor" uid="132">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

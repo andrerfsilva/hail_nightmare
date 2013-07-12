@@ -8,7 +8,7 @@
         <event-block sid="1107705846518716">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="3496938195883524" type="Player">
-                    <param id="0" name="Object">DarkRoomPassage</param>
+                    <param id="0" name="Object">CCDarkRoomPassage</param>
                 </condition>
             </conditions>
             <actions>
@@ -20,7 +20,7 @@
         <event-block sid="6035472203921449">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="7099967834707439" type="Player">
-                    <param id="0" name="Object">PrisonHallDoor</param>
+                    <param id="0" name="Object">CCPrisonHallDoor</param>
                 </condition>
             </conditions>
             <actions>

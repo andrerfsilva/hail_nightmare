@@ -160,7 +160,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DarkRoomPassage" uid="119">
+                <instance type="CCDarkRoomPassage" uid="119">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -182,7 +182,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PrisonHallDoor" uid="120">
+                <instance type="CCPrisonHallDoor" uid="120">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

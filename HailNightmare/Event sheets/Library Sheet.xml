@@ -129,7 +129,7 @@
         <event-block sid="355019034070165">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="3048606433578791" type="Player">
-                    <param id="0" name="Object">LibraryPrisonHallDoor</param>
+                    <param id="0" name="Object">LPrisonHallDoor</param>
                 </condition>
             </conditions>
             <actions>
