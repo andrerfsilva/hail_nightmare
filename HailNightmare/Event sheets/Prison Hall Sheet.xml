@@ -87,8 +87,8 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="4546818348836364" type="Player">
-                            <param id="0" name="X">295</param>
-                            <param id="1" name="Y">436</param>
+                            <param id="0" name="X">230</param>
+                            <param id="1" name="Y">380</param>
                         </action>
                     </actions>
                 </event-block>
