@@ -170,11 +170,11 @@
                         <x>181</x>
                         <y>196</y>
                         <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
+                        <width>60</width>
+                        <height>180</height>
                         <depth>0</depth>
-                        <hotspotX>0.481481493</hotspotX>
-                        <hotspotY>0.495145619</hotspotY>
+                        <hotspotX>0.516666651</hotspotX>
+                        <hotspotY>0.50555557</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

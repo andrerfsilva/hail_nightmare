@@ -10,8 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML 5" />
     </configurations>
     <open-tabs>
-        <layout>Prison Hall</layout>
-        <event-sheet active="1">Prison Hall Sheet</event-sheet>
+        <layout active="1">Library</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
