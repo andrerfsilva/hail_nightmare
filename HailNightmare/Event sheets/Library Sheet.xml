@@ -16,7 +16,23 @@
                     <param id="0" name="Variable">PyrokinesisEnabled</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-4" name="Set position to another object" sid="1808629427754039" type="PyroAnnounceText">
+                    <param id="0" name="Object">HolocaustPicture</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1175382935489939" type="HolocaustPicture">
+                    <param id="0" name="Object">PyroAnnounceExplosion</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="9266665523121386" type="PyroAnnounceExplosion">
+                    <param id="0" name="Angle">270</param>
+                </action>
                 <action id="-9" name="Destroy" sid="4470927687996036" type="HolocaustPicture" />
+                <action id="-16" name="Wait" sid="7856412237833139" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2259557053957613" type="PyroAnnounceText" />
             </actions>
         </event-block>
         <comment>Os livros fantasmas começam a fase no estado não agressivo. Nesse estado eles não causam dano, e também não podem ser destruídos. A cada 5 a 10 segundos (distribuição uniforme) o livro mais próximo do jogador fica agressivo e começa a se movimentar contra ele.</comment>

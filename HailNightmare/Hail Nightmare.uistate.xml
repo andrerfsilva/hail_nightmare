@@ -9,9 +9,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         </active>
         <display name="HTML 5" />
     </configurations>
-    <open-tabs>
-        <layout active="1">Carla&apos;s Cell</layout>
-    </open-tabs>
+    <open-tabs />
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />

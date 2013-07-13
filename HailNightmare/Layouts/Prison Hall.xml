@@ -122,10 +122,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>71.5</x>
+                        <x>66</x>
                         <y>400.5</y>
                         <z>0</z>
-                        <width>121</width>
+                        <width>110</width>
                         <height>39</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -172,35 +172,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640.5</x>
+                        <x>884</x>
                         <y>744.5</y>
                         <z>0</z>
-                        <width>516</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="PrisonHallFloor" uid="126">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1198</x>
-                        <y>748</y>
-                        <z>0</z>
-                        <width>361</width>
+                        <width>1003</width>
                         <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
