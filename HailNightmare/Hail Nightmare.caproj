@@ -18,10 +18,10 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -92,18 +92,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="DarkRoomPlataform" sid="4514233440627839">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6315788997840522" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Keyboard" sid="1685849411953899">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="DarkRoomGround" sid="5023571099595647">
+        <object-type name="DarkRoomFloor" sid="5023571099595647">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2059998283274249" speed="5">
@@ -113,11 +105,6 @@
         </object-type>
         <object-type name="Stairs" sid="9880164929407041">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="2997791461912556">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="44491629551146" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -270,11 +257,6 @@
         </object-type>
         <object-type name="LibraryFloor" sid="8122969387565027">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="8255950046238783">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5155138372306816" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -295,11 +277,6 @@
         </object-type>
         <object-type name="LibraryPlatform" sid="2689201576221053">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="815585969998066">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7388643645548481" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -453,11 +430,6 @@
         </object-type>
         <object-type name="CarlasCellFloor" sid="233062161118743">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="1656233542150562">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5405463888635319" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -494,11 +466,6 @@
         </object-type>
         <object-type name="PrisonHallFloor" sid="5223319026791044">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="6578533744175873">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6341609101077833" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -551,11 +518,6 @@
         </object-type>
         <object-type name="CorridorFloor" sid="593540603039814">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="3132025523360992">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4143722712152812" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -594,8 +556,59 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="CarlaCellStair" sid="1081119910969064">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4960858290804714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CarlasCellPlatform" sid="2974093285261602">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8292510750372803" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DarkRoomPlatform" sid="7904010292252252">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2651430285408933">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7516551989165625" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PrisonHallPlatform" sid="2453051856891869">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5939111637481467" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
+        <family name="Floors" plugin-id="Sprite" sid="3568532233825893">
+            <members>
+                <member>CarlasCellFloor</member>
+                <member>CorridorFloor</member>
+                <member>DarkRoomFloor</member>
+                <member>LibraryFloor</member>
+                <member>PrisonHallFloor</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Solid" sid="49307661873968">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
         <family name="ToxicElements" plugin-id="Sprite" sid="3568532233825894">
             <members>
                 <member>ToxicWater</member>
@@ -637,10 +650,12 @@
                 <member>Shadow</member>
             </members>
         </family>
-        <family name="Plataforms" plugin-id="Sprite" sid="3568532233825900">
+        <family name="Platforms" plugin-id="Sprite" sid="3568532233825900">
             <members>
-                <member>DarkRoomGround</member>
-                <member>DarkRoomPlataform</member>
+                <member>CarlasCellPlatform</member>
+                <member>DarkRoomPlatform</member>
+                <member>LibraryPlatform</member>
+                <member>PrisonHallPlatform</member>
             </members>
             <behaviors>
                 <behavior-type name="Jumpthru" sid="7281363060022323">
