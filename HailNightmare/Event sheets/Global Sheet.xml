@@ -76,7 +76,7 @@
         </event-group>
         <event-group collapsed="1" description="" sid="5724336177637635" title="Eventos de shooting">
             <sub-events>
-                <event-block sid="1414263088900472">
+                <event-block collapsed="1" sid="1414263088900472">
                     <conditions>
                         <condition id="2" name="Key is down" sid="5889958545912148" type="Keyboard">
                             <param id="0" name="Key">65 (A)</param>
@@ -84,13 +84,17 @@
                         <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8890506962813231" type="Player">
                             <param id="0" name="Instance variable">Reloading</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="7945556048729232" type="System">
+                        <condition disabled="1" id="-14" name="Compare variable" sid="7945556048729232" type="System">
                             <param id="0" name="Variable">PyrokinesisEnabled</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="4912683730159933" type="Player">
+                            <param id="0" name="Animation">&quot;Pyro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="0" name="Spawn another object" sid="2019495600611418" type="Player">
                             <param id="0" name="Object">Pyro</param>
                             <param id="1" name="Layer">1</param>
@@ -143,6 +147,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="5660122121922772" type="Player">
+                            <param id="0" name="Animation">&quot;Telekinesis&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="0" name="Spawn another object" sid="7394492639959774" type="Player">
                             <param id="0" name="Object">Telekinesis</param>
                             <param id="1" name="Layer">1</param>
@@ -182,6 +190,20 @@
                         <action id="-13" name="Set boolean" sid="2220696832992376" type="Player">
                             <param id="0" name="Instance variable">Reloading</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5001921752055242">
+                    <conditions>
+                        <condition id="5" name="On any finished" sid="9436042510576047" type="Player" />
+                        <condition id="2" inverted="1" name="Is playing" sid="6902013200374211" type="Player">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3212894174120612" type="Player">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
