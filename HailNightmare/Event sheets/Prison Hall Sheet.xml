@@ -69,8 +69,8 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="253194588734538" type="Player">
-                            <param id="0" name="X">1248</param>
-                            <param id="1" name="Y">542</param>
+                            <param id="0" name="X">1250</param>
+                            <param id="1" name="Y">712</param>
                         </action>
                         <action id="7" name="Set mirrored" sid="2909803150935923" type="Player">
                             <param id="0" name="State">0</param>
@@ -87,8 +87,8 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="4546818348836364" type="Player">
-                            <param id="0" name="X">450</param>
-                            <param id="1" name="Y">654</param>
+                            <param id="0" name="X">295</param>
+                            <param id="1" name="Y">436</param>
                         </action>
                     </actions>
                 </event-block>

@@ -74,6 +74,7 @@
                     <instance-variables>
                         <Life>100</Life>
                         <Reloading>false</Reloading>
+                        <onLadders>false</onLadders>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -93,12 +94,22 @@
                                 <bound-by>Edge</bound-by>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>360 degree (smooth)</set-angle>
+                                <default-controls>Yes</default-controls>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>110</x>
-                        <y>329</y>
+                        <x>106</x>
+                        <y>391</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -122,11 +133,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>66</x>
-                        <y>400.5</y>
+                        <x>59</x>
+                        <y>478.5</y>
                         <z>0</z>
                         <width>110</width>
-                        <height>39</height>
+                        <height>24</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -147,11 +158,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>339.5</x>
-                        <y>398</y>
+                        <x>295.5</x>
+                        <y>482.5</y>
                         <z>0</z>
-                        <width>83</width>
-                        <height>39</height>
+                        <width>112</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -172,36 +183,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>884</x>
-                        <y>744.5</y>
+                        <x>873</x>
+                        <y>786</y>
                         <z>0</z>
-                        <width>1003</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="PrisonHallFloor" uid="127">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1222.5</x>
-                        <y>648</y>
-                        <z>0</z>
-                        <width>298</width>
-                        <height>96</height>
+                        <width>1041</width>
+                        <height>36</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -222,11 +208,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1181.5</x>
-                        <y>266.5</y>
+                        <x>1220</x>
+                        <y>311.5</y>
                         <z>0</z>
-                        <width>365</width>
-                        <height>71</height>
+                        <width>343</width>
+                        <height>24</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -244,10 +230,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>29.5</x>
-                        <y>259</y>
+                        <x>22</x>
+                        <y>328</y>
                         <z>0</z>
-                        <width>39</width>
+                        <width>27</width>
                         <height>256</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -266,8 +252,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1358</x>
-                        <y>127</y>
+                        <x>1349</x>
+                        <y>172</y>
                         <z>0</z>
                         <width>50</width>
                         <height>238</height>
@@ -288,32 +274,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>196.5</x>
-                        <y>775</y>
+                        <x>181.5</x>
+                        <y>791</y>
                         <z>0</z>
-                        <width>357</width>
-                        <height>23</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="PHDarkRoomPassage" uid="134">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>958.5</x>
-                        <y>783</y>
-                        <z>0</z>
-                        <width>116</width>
+                        <width>322</width>
                         <height>23</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -332,8 +296,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1355.5</x>
-                        <y>497.5</y>
+                        <x>1338</x>
+                        <y>638</y>
                         <z>0</z>
                         <width>59</width>
                         <height>243</height>
@@ -354,11 +318,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>216</x>
-                        <y>590.5</y>
+                        <x>173</x>
+                        <y>634</y>
                         <z>0</z>
-                        <width>108</width>
-                        <height>384</height>
+                        <width>86</width>
+                        <height>342</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -376,11 +340,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>945</x>
-                        <y>522</y>
+                        <x>1002</x>
+                        <y>517.5</y>
                         <z>0</z>
                         <width>82</width>
-                        <height>535</height>
+                        <height>496</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PrisonHallFloor" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>321</x>
+                        <y>634</y>
+                        <z>0</z>
+                        <width>59</width>
+                        <height>336</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

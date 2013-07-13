@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="PyrokinesisEnabled" sid="808177754518235" static="0" type="number">0</variable>
         <variable constant="0" name="LastLayout" sid="896027254131104" static="0" type="text">Game Menu</variable>
-        <event-group collapsed="1" description="" sid="6772643683932675" title="Eventos globais">
+        <event-group description="" sid="6772643683932675" title="Eventos globais">
             <sub-events>
                 <event-block sid="7176215925750598">
                     <conditions>
@@ -173,6 +173,17 @@
         </event-group>
         <event-group description="" sid="8257575794434735" title="Eventos de escalada">
             <sub-events>
+                <event-block sid="6772030821847361">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1429934858662562" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="2442391148329577" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>If the player is jumping, get on the ladder with the </comment>
                 <event-block sid="6834089806134601">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="4458606447719189" type="Player">

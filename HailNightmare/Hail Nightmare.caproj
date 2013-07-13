@@ -19,9 +19,10 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -65,6 +66,7 @@
             <instance-variables>
                 <instance-variable comment="Medidor de hit poits. Quando chega a zero o personagem morre." name="Life" sid="4867138298575531" type="number" />
                 <instance-variable comment="Usada para limitar a quantidade de tiros." name="Reloading" sid="8206243929054003" type="boolean" />
+                <instance-variable name="onLadders" sid="6405498249212344" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="ScrollTo" sid="314426451210904">
@@ -72,6 +74,9 @@
                 </behavior-type>
                 <behavior-type name="BoundToLayout" sid="4187634396324424">
                     <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="3745928842141146">
+                    <behavior id="EightDir" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
@@ -400,6 +405,11 @@
         </object-type>
         <object-type name="GameStartLight" sid="4119150206326255">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="6196901555850126">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5543354461844828" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -448,14 +458,6 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2989236030115832" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="6945470791427878">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4379967355121246" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -539,10 +541,6 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="CarlaCellBackground" sid="9391006415114775">
-            <plugin id="TiledBg" />
-            <texture />
         </object-type>
         <object-type name="DarkRoomBackground" sid="9194196718755045">
             <plugin id="TiledBg" />

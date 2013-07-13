@@ -53,8 +53,8 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="8345959896114148" type="Player">
-                            <param id="0" name="X">687</param>
-                            <param id="1" name="Y">482</param>
+                            <param id="0" name="X">542</param>
+                            <param id="1" name="Y">654</param>
                         </action>
                     </actions>
                 </event-block>
@@ -71,8 +71,8 @@
                             <param id="0" name="State">0</param>
                         </action>
                         <action id="-3" name="Set position" sid="6756935551761827" type="Player">
-                            <param id="0" name="X">1197</param>
-                            <param id="1" name="Y">296</param>
+                            <param id="0" name="X">1212</param>
+                            <param id="1" name="Y">593</param>
                         </action>
                     </actions>
                 </event-block>
