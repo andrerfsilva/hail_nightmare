@@ -4,7 +4,7 @@
     <name>DarkRoom Sheet</name>
     <events>
         <include>Global Sheet</include>
-        <event-group description="" sid="8076863219703164" title="Eventos globais">
+        <event-group collapsed="1" description="" sid="8076863219703164" title="Eventos globais">
             <sub-events>
                 <event-block sid="8342101754777489">
                     <conditions>
@@ -53,7 +53,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="3618165053994433" title="Eventos de colisão">
+        <event-group description="" sid="3618165053994433" title="Eventos de colisão">
             <sub-events>
                 <event-block sid="7616318547794298">
                     <conditions>
@@ -133,7 +133,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-group collapsed="1" description="" sid="6876266733952382" title="Eventos de transição de layout">
+                <event-group description="" sid="6876266733952382" title="Eventos de transição de layout">
                     <sub-events>
                         <event-block sid="7197758415733628">
                             <conditions>
@@ -175,7 +175,7 @@
                         </event-block>
                         <event-block sid="1894217163100224">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="6156470946845095" type="Player">
+                                <condition id="1" name="Is overlapping another object" sid="6156470946845095" type="Player">
                                     <param id="0" name="Object">DarkRoomCCPassage</param>
                                 </condition>
                             </conditions>
@@ -191,7 +191,7 @@
                         </event-block>
                         <event-block sid="4216122405561284">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="6516234507929662" type="Player">
+                                <condition id="1" name="Is overlapping another object" sid="6516234507929662" type="Player">
                                     <param id="0" name="Object">DarkRoomPrisonHallPassage</param>
                                 </condition>
                             </conditions>

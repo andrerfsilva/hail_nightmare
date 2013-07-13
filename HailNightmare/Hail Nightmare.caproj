@@ -18,10 +18,10 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -76,71 +76,13 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6050193590294477" speed="5">
-                    <frame duration="1" hotspotX="0.516667" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.516667" hotspotY="0.505556">
                         <collision-poly>
                             <point x="0" y="0.284622" />
                             <point x="1" y="1" />
                             <point x="1" y="1" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="3" loop="0" name="Telekinesis" pingpong="0" repeatcount="1" repeatto="0" sid="2466920911458879" speed="5">
-                    <frame duration="1" hotspotX="0.516667" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.516667" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0" y="0.907392" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.516667" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="3" loop="0" name="Pyro" pingpong="0" repeatcount="1" repeatto="0" sid="5333368579055959" speed="5">
-                    <frame duration="1" hotspotX="0.516667" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0" y="0.867511" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.516667" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0" y="0.850991" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.516667" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0" y="0.867511" />
                         </collision-poly>
                     </frame>
                 </animation>

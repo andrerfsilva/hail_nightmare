@@ -98,14 +98,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>106</x>
-                        <y>391</y>
+                        <x>119</x>
+                        <y>362</y>
                         <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
+                        <width>60</width>
+                        <height>180</height>
                         <depth>0</depth>
-                        <hotspotX>0.481481493</hotspotX>
-                        <hotspotY>0.495145619</hotspotY>
+                        <hotspotX>0.516666651</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -334,6 +334,31 @@
                         <y>313</y>
                         <z>0</z>
                         <width>457</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PrisonHallPlatform" uid="123">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Jumpthru" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>614.5</x>
+                        <y>418</y>
+                        <z>0</z>
+                        <width>179</width>
                         <height>24</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
