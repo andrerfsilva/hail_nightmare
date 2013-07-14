@@ -4,210 +4,200 @@
     <name>DarkRoom Sheet</name>
     <events>
         <include>Global Sheet</include>
-        <event-group collapsed="1" description="" sid="8076863219703164" title="Eventos globais">
+        <comment>Eventos de pingo do esgoto</comment>
+        <event-block sid="8342101754777489">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2006969888847693" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+                <condition id="-16" name="Pick random instance" sid="3940585266403481" type="System">
+                    <param id="0" name="Object">Pipes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8570707932886971" type="Pipes">
+                    <param id="0" name="Object">WaterDrop</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="8738250916299311" type="WaterDrop">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Eventos de movimentação da iluminação do player</comment>
+        <event-block sid="5327203796643251">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="9234268412678461" type="PlayerLight">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2532400225733566">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2601211512870004" type="Player">
+                    <param id="0" name="Object">Key</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3998517921805971" type="System">
+                    <param id="0" name="Variable">hasOfficeKey</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7296330512867179" type="Key" />
+            </actions>
+        </event-block>
+        <event-block sid="7616318547794298">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="2032374943868304" type="Enemies">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="8091328802913293" type="Player">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">0.05</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8305609441529509">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="839083933295722" type="Enemies">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="8371701319692776" type="Player">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4542586185884795">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5567401100424347" type="Pyro">
+                    <param id="0" name="Object">Shadows</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7932527883180978" type="Shadows" />
+                <action id="0" name="Spawn another object" sid="3950664261738097" type="Shadows">
+                    <param id="0" name="Object">Smoke</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2304491637403829" type="Shadows" />
+                <action id="-9" name="Destroy" sid="7643879760821118" type="Pyro" />
+            </actions>
+        </event-block>
+        <event-block sid="6240278222053161">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1769108097093963" type="Telekinesis">
+                    <param id="0" name="Object">Shadows</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7827862610211243" type="Miss">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="5909645949724151" type="Miss">
+                    <param id="0" name="Object">Telekinesis</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="1736305721402416" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7797136379218065" type="Miss">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8447167040085816">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8003966213720526" type="Player">
+                    <param id="0" name="Object">ToxicElements</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="9020528309216773" type="Player">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7197758415733628">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3663612335289158" type="System" />
+            </conditions>
+            <actions />
             <sub-events>
-                <event-block sid="8342101754777489">
+                <event-block sid="7854414632640334">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="2006969888847693" type="System">
-                            <param id="0" name="Interval (seconds)">3</param>
-                        </condition>
-                        <condition id="-16" name="Pick random instance" sid="3940585266403481" type="System">
-                            <param id="0" name="Object">Pipes</param>
+                        <condition id="-14" name="Compare variable" sid="5321435269215419" type="System">
+                            <param id="0" name="Variable">LastLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Carla&apos;s Cell&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="8570707932886971" type="Pipes">
-                            <param id="0" name="Object">WaterDrop</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="8738250916299311" type="WaterDrop">
-                            <param id="0" name="Angle">90</param>
+                        <action id="-3" name="Set position" sid="1807156618745485" type="Player">
+                            <param id="0" name="X">298</param>
+                            <param id="1" name="Y">78</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="5327203796643251">
+                <event-block sid="5881318406065417">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="9234268412678461" type="PlayerLight">
-                            <param id="0" name="X">Player.X</param>
-                            <param id="1" name="Y">Player.y</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="2532400225733566">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="2601211512870004" type="Player">
-                            <param id="0" name="Object">Key</param>
+                        <condition id="-14" name="Compare variable" sid="4779225440338511" type="System">
+                            <param id="0" name="Variable">LastLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Prison Hall&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="3998517921805971" type="System">
-                            <param id="0" name="Variable">hasOfficeKey</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="-3" name="Set position" sid="8017475478878123" type="Player">
+                            <param id="0" name="X">985</param>
+                            <param id="1" name="Y">184</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="7296330512867179" type="Key" />
                     </actions>
                 </event-block>
             </sub-events>
-        </event-group>
-        <event-group description="" sid="3618165053994433" title="Eventos de colisão">
-            <sub-events>
-                <event-block sid="7616318547794298">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="2032374943868304" type="Enemies">
-                            <param id="0" name="Object">Player</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Subtract from" sid="8091328802913293" type="Player">
-                            <param id="0" name="Instance variable">Life</param>
-                            <param id="1" name="Value">0.05</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="8305609441529509">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="839083933295722" type="Enemies">
-                            <param id="0" name="Object">Player</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Subtract from" sid="8371701319692776" type="Player">
-                            <param id="0" name="Instance variable">Life</param>
-                            <param id="1" name="Value">10</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="4542586185884795">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="5567401100424347" type="Pyro">
-                            <param id="0" name="Object">Shadows</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="7932527883180978" type="Shadows" />
-                        <action id="0" name="Spawn another object" sid="3950664261738097" type="Shadows">
-                            <param id="0" name="Object">Smoke</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="2304491637403829" type="Shadows" />
-                        <action id="-9" name="Destroy" sid="7643879760821118" type="Pyro" />
-                    </actions>
-                </event-block>
-                <event-block sid="6240278222053161">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="1769108097093963" type="Telekinesis">
-                            <param id="0" name="Object">Shadows</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="7827862610211243" type="Miss">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="5909645949724151" type="Miss">
-                            <param id="0" name="Object">Telekinesis</param>
-                            <param id="1" name="Image point (optional)">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="1736305721402416" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="7797136379218065" type="Miss">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="8447167040085816">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="8003966213720526" type="Player">
-                            <param id="0" name="Object">ToxicElements</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Subtract from" sid="9020528309216773" type="Player">
-                            <param id="0" name="Instance variable">Life</param>
-                            <param id="1" name="Value">10</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-group description="" sid="6876266733952382" title="Eventos de transição de layout">
-                    <sub-events>
-                        <event-block sid="7197758415733628">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="3663612335289158" type="System" />
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="7854414632640334">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="5321435269215419" type="System">
-                                            <param id="0" name="Variable">LastLayout</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Carla&apos;s Cell&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Set position" sid="1807156618745485" type="Player">
-                                            <param id="0" name="X">298</param>
-                                            <param id="1" name="Y">78</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="5881318406065417">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="4779225440338511" type="System">
-                                            <param id="0" name="Variable">LastLayout</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Prison Hall&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Set position" sid="8017475478878123" type="Player">
-                                            <param id="0" name="X">985</param>
-                                            <param id="1" name="Y">184</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="1894217163100224">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="6156470946845095" type="Player">
-                                    <param id="0" name="Object">DarkRoomCCPassage</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="3917913614891811" type="System">
-                                    <param id="0" name="Variable">LastLayout</param>
-                                    <param id="1" name="Value">&quot;DarkRoom&quot;</param>
-                                </action>
-                                <action id="-25" name="Go to layout (by name)" sid="6446629305845322" type="System">
-                                    <param id="0" name="Layout">&quot;Carla&apos;s Cell&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="4216122405561284">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="6516234507929662" type="Player">
-                                    <param id="0" name="Object">DarkRoomPrisonHallPassage</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="28191613206421" type="System">
-                                    <param id="0" name="Variable">LastLayout</param>
-                                    <param id="1" name="Value">&quot;DarkRoom&quot;</param>
-                                </action>
-                                <action id="-25" name="Go to layout (by name)" sid="6310583785699399" type="System">
-                                    <param id="0" name="Layout">&quot;Prison Hall&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-            </sub-events>
-        </event-group>
+        </event-block>
+        <event-block sid="1894217163100224">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6156470946845095" type="Player">
+                    <param id="0" name="Object">DarkRoomCCPassage</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3917913614891811" type="System">
+                    <param id="0" name="Variable">LastLayout</param>
+                    <param id="1" name="Value">&quot;DarkRoom&quot;</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="6446629305845322" type="System">
+                    <param id="0" name="Layout">&quot;Carla&apos;s Cell&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4216122405561284">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6516234507929662" type="Player">
+                    <param id="0" name="Object">DarkRoomPrisonHallPassage</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="28191613206421" type="System">
+                    <param id="0" name="Variable">LastLayout</param>
+                    <param id="1" name="Value">&quot;DarkRoom&quot;</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="6310583785699399" type="System">
+                    <param id="0" name="Layout">&quot;Prison Hall&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

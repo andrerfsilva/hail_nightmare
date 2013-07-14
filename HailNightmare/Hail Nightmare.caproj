@@ -75,16 +75,96 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6050193590294477" speed="5">
-                    <frame duration="1" hotspotX="0.516667" hotspotY="0.505556">
-                        <collision-poly>
-                            <point x="0" y="0.284622" />
-                            <point x="1" y="1" />
-                            <point x="1" y="1" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="1" loop="0" name="Default2" pingpong="0" repeatcount="1" repeatto="0" sid="7998019334396424" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                </animation>
+                <animation framecount="6" loop="0" name="Andando2" pingpong="0" repeatcount="1" repeatto="0" sid="9136030815749216" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                </animation>
+                <animation framecount="2" loop="0" name="Telekinesis2" pingpong="0" repeatcount="1" repeatto="0" sid="9889529766351209" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500393" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500393" />
+                </animation>
+                <animation framecount="2" loop="0" name="Pyro2" pingpong="0" repeatcount="1" repeatto="0" sid="7583784988218436" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="8" loop="0" name="Correndo2" pingpong="0" repeatcount="1" repeatto="0" sid="2371342378107132" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                </animation>
+                <animation framecount="6" loop="0" name="Pulando2" pingpong="0" repeatcount="1" repeatto="0" sid="3455172220960211" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500394" />
+                </animation>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4241294760443215" speed="5">
+                    <frame duration="1" hotspotX="0.642857" hotspotY="0.494444" />
+                </animation>
+                <animation framecount="6" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="3311549496078605" speed="5">
+                    <frame duration="1" hotspotX="0.603774" hotspotY="0.48" />
+                    <frame duration="1" hotspotX="0.441558" hotspotY="0.477012" />
+                    <frame duration="1" hotspotX="0.488636" hotspotY="0.502732" />
+                    <frame duration="1" hotspotX="0.571429" hotspotY="0.480226" />
+                    <frame duration="1" hotspotX="0.704545" hotspotY="0.474286" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.460674" />
+                </animation>
+                <animation framecount="2" loop="0" name="Telekinesis" pingpong="0" repeatcount="1" repeatto="0" sid="867679934414488" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.479769" />
+                    <frame duration="1" hotspotX="0.357143" hotspotY="0.474286" />
+                </animation>
+                <animation framecount="2" loop="0" name="Pyro" pingpong="0" repeatcount="1" repeatto="0" sid="8283478341102593" speed="5">
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.459302" />
+                    <frame duration="1" hotspotX="0.415094" hotspotY="0.462428" />
+                </animation>
+                <animation framecount="8" loop="0" name="Correndo" pingpong="0" repeatcount="1" repeatto="0" sid="4591593970435585" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.491228" />
+                    <frame duration="1" hotspotX="0.467532" hotspotY="0.413333" />
+                    <frame duration="1" hotspotX="0.528302" hotspotY="0.421053" />
+                    <frame duration="1" hotspotX="0.487805" hotspotY="0.466667" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.428571" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.436709" />
+                    <frame duration="1" hotspotX="0.47619" hotspotY="0.484848" />
+                    <frame duration="1" hotspotX="0.542056" hotspotY="0.427632" />
+                </animation>
+                <animation framecount="6" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="4760628599139744" speed="5">
+                    <frame duration="1" hotspotX="0.410959" hotspotY="0.451807" />
+                    <frame duration="1" hotspotX="0.407407" hotspotY="0.510753" />
+                    <frame duration="1" hotspotX="0.503401" hotspotY="0.518919" />
+                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
+                    <frame duration="1" hotspotX="0.586667" hotspotY="0.482759" />
+                    <frame duration="1" hotspotX="0.438776" hotspotY="0.527473" />
+                </animation>
+                <animation framecount="2" loop="0" name="Escalando" pingpong="0" repeatcount="1" repeatto="0" sid="3553342643280499" speed="5">
+                    <frame duration="1" hotspotX="0.772727" hotspotY="0.495283" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
+                </animation>
+                <animation framecount="5" loop="0" name="CorrendoCurto" pingpong="0" repeatcount="1" repeatto="0" sid="2167122608702876" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.491228" />
+                    <frame duration="1" hotspotX="0.467532" hotspotY="0.413333" />
+                    <frame duration="1" hotspotX="0.528302" hotspotY="0.421053" />
+                    <frame duration="1" hotspotX="0.487805" hotspotY="0.466667" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.428571" />
+                </animation>
+                <animation framecount="4" loop="0" name="PulandoCurto" pingpong="0" repeatcount="1" repeatto="0" sid="30205313270994" speed="5">
+                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
+                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
+                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
+                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -608,6 +688,53 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Guarda" sid="983218008056785">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1992778654397863" speed="5">
+                    <frame duration="1" hotspotX="0.754717" hotspotY="0.443243" />
+                </animation>
+                <animation framecount="6" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="6116695854493706" speed="5">
+                    <frame duration="1" hotspotX="0.754717" hotspotY="0.443243" />
+                    <frame duration="1" hotspotX="0.362319" hotspotY="0.445652" />
+                    <frame duration="1" hotspotX="0.381579" hotspotY="0.463542" />
+                    <frame duration="1" hotspotX="0.41791" hotspotY="0.440217" />
+                    <frame duration="1" hotspotX="0.391304" hotspotY="0.452128" />
+                    <frame duration="1" hotspotX="0.377049" hotspotY="0.443243" />
+                </animation>
+                <animation framecount="3" loop="0" name="MorrendoChoke" pingpong="0" repeatcount="1" repeatto="0" sid="3863115826387795" speed="5">
+                    <frame duration="1" hotspotX="0.8" hotspotY="0.507246" />
+                    <frame duration="1" hotspotX="0.425287" hotspotY="0.186047" />
+                    <frame duration="1" hotspotX="0.503185" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation4" pingpong="0" repeatcount="1" repeatto="0" sid="5873798715956585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation5" pingpong="0" repeatcount="1" repeatto="0" sid="8599601664453412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OfficeBackground" sid="9543388741978518">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="OfficeFloor" sid="1084741985962006">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8221159871433152" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OfficePlatform" sid="3706903605764316">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Floors" plugin-id="Sprite" sid="3568532233825893">
@@ -616,6 +743,7 @@
                 <member>CorridorFloor</member>
                 <member>DarkRoomFloor</member>
                 <member>LibraryFloor</member>
+                <member>OfficeFloor</member>
                 <member>PrisonHallFloor</member>
             </members>
             <behaviors>
@@ -674,6 +802,7 @@
                 <member>CorridorPlatform</member>
                 <member>DarkRoomPlatform</member>
                 <member>LibraryPlatform</member>
+                <member>OfficePlatform</member>
                 <member>PrisonHallPlatform</member>
             </members>
             <behaviors>
@@ -692,6 +821,7 @@
         <layout>Carla&apos;s Cell.xml</layout>
         <layout>Prison Hall.xml</layout>
         <layout>Corridor.xml</layout>
+        <layout>Office.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>DarkRoom Sheet.xml</event-sheet>
@@ -701,10 +831,11 @@
         <event-sheet>Carla&apos;s Cell Sheet.xml</event-sheet>
         <event-sheet>Prison Hall Sheet.xml</event-sheet>
         <event-sheet>Corridor Sheet.xml</event-sheet>
+        <event-sheet>Office Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="5" />
-        <global-instance type="Mouse" uid="102" />
+        <global-instance type="Keyboard" uid="124" />
+        <global-instance type="Mouse" uid="128" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />

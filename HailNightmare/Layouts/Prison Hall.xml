@@ -47,6 +47,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Guarda" uid="123">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>705</x>
+                        <y>665</y>
+                        <z>0</z>
+                        <width>53</width>
+                        <height>185</height>
+                        <depth>0</depth>
+                        <hotspotX>0.754716992</hotspotX>
+                        <hotspotY>0.443243235</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -79,8 +101,8 @@
                     <behavior-instances>
                         <behavior-instance type="Platform">
                             <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
+                                <max-speed>250</max-speed>
+                                <acceleration>250</acceleration>
                                 <deceleration>1500</deceleration>
                                 <jump-strength>650</jump-strength>
                                 <gravity>1500</gravity>
@@ -98,14 +120,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>119</x>
-                        <y>362</y>
+                        <x>203</x>
+                        <y>346</y>
                         <z>0</z>
-                        <width>60</width>
-                        <height>180</height>
+                        <width>42</width>
+                        <height>149.399993896</height>
                         <depth>0</depth>
-                        <hotspotX>0.516666651</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.642857134</hotspotX>
+                        <hotspotY>0.49444443</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -234,10 +256,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>173</x>
-                        <y>634</y>
+                        <y>635.590454102</y>
                         <z>0</z>
                         <width>86</width>
-                        <height>342</height>
+                        <height>338.819152832</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -280,7 +302,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>327</x>
+                        <x>329</x>
                         <y>634</y>
                         <z>0</z>
                         <width>39</width>
@@ -305,11 +327,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>157</x>
-                        <y>478.5</y>
+                        <x>158.024414063</x>
+                        <y>478.295043945</y>
                         <z>0</z>
-                        <width>302</width>
-                        <height>24</height>
+                        <width>304.048828125</width>
+                        <height>24.409881592</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -342,7 +364,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PrisonHallPlatform" uid="123">
+                <instance type="PrisonHallPlatform" uid="102">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

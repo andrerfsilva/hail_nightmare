@@ -148,8 +148,8 @@
                     <behavior-instances>
                         <behavior-instance type="Platform">
                             <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
+                                <max-speed>250</max-speed>
+                                <acceleration>250</acceleration>
                                 <deceleration>1500</deceleration>
                                 <jump-strength>650</jump-strength>
                                 <gravity>1500</gravity>
@@ -170,11 +170,11 @@
                         <x>181</x>
                         <y>196</y>
                         <z>0</z>
-                        <width>60</width>
-                        <height>180</height>
+                        <width>42</width>
+                        <height>149.399993896</height>
                         <depth>0</depth>
-                        <hotspotX>0.516666651</hotspotX>
-                        <hotspotY>0.50555557</hotspotY>
+                        <hotspotX>0.642857134</hotspotX>
+                        <hotspotY>0.49444443</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -190,10 +190,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>293</x>
-                        <y>483</y>
+                        <y>484.307434082</y>
                         <z>0</z>
                         <width>80</width>
-                        <height>374</height>
+                        <height>371.385101318</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -212,10 +212,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1112</x>
-                        <y>486</y>
+                        <y>484.155822754</y>
                         <z>0</z>
                         <width>80</width>
-                        <height>368</height>
+                        <height>371.688446045</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

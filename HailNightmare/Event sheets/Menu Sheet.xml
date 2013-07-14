@@ -3,52 +3,49 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Menu Sheet</name>
     <events>
-        <event-group description="" sid="102981972601909" title="Eventos dos botões">
-            <sub-events>
-                <event-block sid="100538592971135">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="1316500109409694" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">BackToMainMenu</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-25" name="Go to layout (by name)" sid="6186261815274518" type="System">
-                            <param id="0" name="Layout">&quot;GameMenu&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="4806104910434557">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="6661782805824137" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">HelpButton</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-25" name="Go to layout (by name)" sid="8381614340858542" type="System">
-                            <param id="0" name="Layout">&quot;Help&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7972562738672605">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="7330768581552352" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">StartGameButton</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-25" name="Go to layout (by name)" sid="4866112513003848" type="System">
-                            <param id="0" name="Layout">&quot;Carla&apos;s Cell&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
+        <comment>Eventos dos botoes</comment>
+        <event-block sid="100538592971135">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1316500109409694" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BackToMainMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="6186261815274518" type="System">
+                    <param id="0" name="Layout">&quot;GameMenu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4806104910434557">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6661782805824137" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">HelpButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="8381614340858542" type="System">
+                    <param id="0" name="Layout">&quot;Help&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7972562738672605">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7330768581552352" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">StartGameButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="4866112513003848" type="System">
+                    <param id="0" name="Layout">&quot;Carla&apos;s Cell&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="7730056167644105">
             <conditions>
                 <condition id="6" name="On object clicked" sid="1599577092803382" type="Mouse">
