@@ -10,8 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML 5" />
     </configurations>
     <open-tabs>
-        <layout>DarkRoom</layout>
-        <event-sheet active="1">DarkRoom Sheet</event-sheet>
+        <layout active="1">DarkRoom</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,7 +25,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="Scalable" />
         <family expanded="0" name="Climber" />
         <family expanded="0" name="Shadows" />
-        <family expanded="0" name="Enemies" />
-        <family expanded="1" name="Platforms" />
+        <family expanded="1" name="Enemies" />
+        <family expanded="0" name="Platforms" />
     </families-expanded>
 </c2uistate>
