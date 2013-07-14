@@ -64,19 +64,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="8305609441529509">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="839083933295722" type="Enemies">
-                    <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="8371701319692776" type="Player">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="4542586185884795">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5567401100424347" type="Pyro">
@@ -122,19 +109,6 @@
                 </action>
                 <action id="-15" name="Set visible" sid="7797136379218065" type="Miss">
                     <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8447167040085816">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="8003966213720526" type="Player">
-                    <param id="0" name="Object">ToxicElements</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="9020528309216773" type="Player">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">10</param>
                 </action>
             </actions>
         </event-block>

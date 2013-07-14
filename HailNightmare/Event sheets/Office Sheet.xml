@@ -4,5 +4,176 @@
     <name>Office Sheet</name>
     <events>
         <include>Global Sheet</include>
+        <event-block sid="3691000088028688">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4534589553263628" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="8118008095226114" type="DrNightmare_TurretPyro">
+                    <param id="0" name="Target">Player</param>
+                </action>
+                <action behavior="Turret" id="1" name="Add object to target" sid="6555726507570028" type="DrNightmare_TurretTele">
+                    <param id="0" name="Target">Player</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2628624953774611" type="DrNightmare_TurretPyro">
+                    <param id="0" name="Pin to">DrNightmare</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="3243521954661421" type="DrNightmare_TurretTele">
+                    <param id="0" name="Pin to">DrNightmare</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="5276322313965175" type="DrNightmare_TurretPyro">
+                    <param id="0" name="Instance variable">enabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4726125607342345">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="796581468665751" type="DrNightmare_TurretPyro" />
+                <condition id="-8" name="Is boolean instance variable set" sid="598396192860535" type="DrNightmare_TurretPyro">
+                    <param id="0" name="Instance variable">enabled</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7071979692190691" type="DrNightmare">
+                    <param id="0" name="Animation">&quot;Shooting&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2658054884942535" type="DrNightmare_TurretPyro">
+                    <param id="0" name="Object">NightmarePyro</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="9034546646586638" type="NightmarePyro">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9320810175348983">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="4298548126898199" type="DrNightmare_TurretTele" />
+                <condition id="-8" name="Is boolean instance variable set" sid="3787135975796681" type="DrNightmare_TurretTele">
+                    <param id="0" name="Instance variable">enabled</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8168084755335526" type="DrNightmare">
+                    <param id="0" name="Animation">&quot;Shooting&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="629264844407026" type="DrNightmare_TurretTele">
+                    <param id="0" name="Object">NightmareTelekinesis</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="1344253306062065" type="NightmareTelekinesis">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block collapsed="1" sid="4571013102426695">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1811284805634451" type="System">
+                    <param id="0" name="Interval (seconds)">random(5, 10)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="5331987104859114" type="DrNightmare">
+                    <param id="0" name="Object">ShadowBullet</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="8327418099802924" type="ShadowBullet">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4686538382234176">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4803094791585339" type="DrNightmare">
+                            <param id="0" name="Instance variable">isPyroTurretActive</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="521141821274226" type="DrNightmare">
+                            <param id="0" name="Instance variable">isPyroTurretActive</param>
+                        </action>
+                        <action id="-14" name="Toggle boolean" sid="8395062610654959" type="DrNightmare_TurretPyro">
+                            <param id="0" name="Instance variable">enabled</param>
+                        </action>
+                        <action id="-14" name="Toggle boolean" sid="6803136216725361" type="DrNightmare_TurretTele">
+                            <param id="0" name="Instance variable">enabled</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3919855969581756">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8499607278001436" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="4616402793807338" type="DrNightmare">
+                            <param id="0" name="Instance variable">isPyroTurretActive</param>
+                        </action>
+                        <action id="-14" name="Toggle boolean" sid="6466470121456656" type="DrNightmare_TurretTele">
+                            <param id="0" name="Instance variable">enabled</param>
+                        </action>
+                        <action id="-14" name="Toggle boolean" sid="4716677700903204" type="DrNightmare_TurretPyro">
+                            <param id="0" name="Instance variable">enabled</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4724678109451349">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3808567374415823" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4575173284152476" type="DrNightmareLife">
+                    <param id="0" name="Text">&quot;Dr. Nightmare Life: &quot; &amp; DrNightmare.life</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9627813315713062">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8241392240165189" type="DrNightmare">
+                    <param id="0" name="Object">Pyro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3303868005370555" type="DrNightmare">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">DrNightmare.life - 10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="309702284919238">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3195444465376018" type="DrNightmare">
+                    <param id="0" name="Object">Telekinesis</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1325407026606625" type="DrNightmare">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">DrNightmare.life - 5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="9315489148711395">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="5355932083816253" type="NightmarePyro" />
+                <condition id="-4" name="Is outside layout" sid="8371140478998979" type="NightmareTelekinesis" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6966870627503492" type="NightmareTelekinesis" />
+                <action id="-9" name="Destroy" sid="7229152360967601" type="NightmarePyro" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

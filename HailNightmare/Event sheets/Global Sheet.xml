@@ -3,103 +3,95 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global Sheet</name>
     <events>
-        <variable constant="0" name="PyrokinesisEnabled" sid="808177754518235" static="0" type="number">0</variable>
         <variable constant="0" name="LastLayout" sid="896027254131104" static="0" type="text">Game Menu</variable>
-        <variable constant="0" name="hasOfficeKey" sid="6664691357448194" static="0" type="number">0</variable>
+        <variable constant="0" name="hasPyrokinesis" sid="9691900332625987" static="0" type="number">0</variable>
+        <variable constant="0" name="hasOfficeKey" sid="635775648536289" static="0" type="number">0</variable>
         <comment>Eventos globais</comment>
-        <event-group description="" sid="6772643683932675" title="Eventos globais">
-            <sub-events>
-                <event-block sid="7176215925750598">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="9884308065339991" type="Keyboard">
-                            <param id="0" name="Key">37 (Left arrow)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="4674896391503046" type="Player">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="5723009451931295" type="Player">
-                            <param id="0" name="Animation">&quot;CorrendoCurto&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="2744759288062962">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="3372666020721129" type="Keyboard">
-                            <param id="0" name="Key">39 (Right arrow)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="933005824487447" type="Player">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="1267785022650401" type="Player">
-                            <param id="0" name="Animation">&quot;CorrendoCurto&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="5327203796643251">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="1805662820869907" type="Life">
-                            <param id="0" name="Text">&quot;Life: &quot; &amp; Player.Life</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6133290541519112">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="8524662421336811" type="Player">
-                            <param id="0" name="Instance variable">Life</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="9359333285585126" type="Player" />
-                        <action id="-2" name="Go to layout" sid="5787634337362812" type="System">
-                            <param id="0" name="Layout">GameOver</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="9436672707624618">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="6705270633480838" type="Keyboard">
-                            <param id="0" name="Key">40 (Down arrow)</param>
-                        </condition>
-                        <condition id="9" name="Is overlapping at offset" sid="3227237413514881" type="Player">
-                            <param id="0" name="Object">Platforms</param>
-                            <param id="1" name="Offset X">0</param>
-                            <param id="2" name="Offset Y">32</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="12" name="Fall through" sid="2237582676192199" type="Player" />
-                        <action disabled="1" id="4" name="Set animation" sid="8983985061526644" type="Player">
-                            <param id="0" name="Animation">&quot;PulandoCurto&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7881572814599093">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="3627621689128448" type="Keyboard">
-                            <param id="0" name="Key">38 (Up arrow)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="3239397754632455" type="Player">
-                            <param id="0" name="Animation">&quot;PulandoCurto&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
+        <event-block sid="5327203796643251">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5671216132114926" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1805662820869907" type="Life">
+                    <param id="0" name="Text">&quot;Life: &quot; &amp; Player.Life</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7176215925750598">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9884308065339991" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4674896391503046" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="5723009451931295" type="Player">
+                    <param id="0" name="Animation">&quot;CorrendoCurto&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2744759288062962">
+            <conditions>
+                <condition id="2" name="Key is down" sid="3372666020721129" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="933005824487447" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1267785022650401" type="Player">
+                    <param id="0" name="Animation">&quot;CorrendoCurto&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6133290541519112">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8524662421336811" type="Player">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9359333285585126" type="Player" />
+                <action id="-2" name="Go to layout" sid="5787634337362812" type="System">
+                    <param id="0" name="Layout">GameOver</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9436672707624618">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6705270633480838" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+                <condition id="9" name="Is overlapping at offset" sid="3227237413514881" type="Player">
+                    <param id="0" name="Object">Platforms</param>
+                    <param id="1" name="Offset X">0</param>
+                    <param id="2" name="Offset Y">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="12" name="Fall through" sid="2237582676192199" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="7881572814599093">
+            <conditions>
+                <condition id="2" name="Key is down" sid="3627621689128448" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3239397754632455" type="Player">
+                    <param id="0" name="Animation">&quot;PulandoCurto&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Eventos de shooting</comment>
         <event-block collapsed="1" sid="1414263088900472">
             <conditions>
@@ -109,13 +101,17 @@
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8890506962813231" type="Player">
                     <param id="0" name="Instance variable">Reloading</param>
                 </condition>
-                <condition disabled="1" id="-14" name="Compare variable" sid="7945556048729232" type="System">
-                    <param id="0" name="Variable">PyrokinesisEnabled</param>
-                    <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Value">0</param>
+                <condition id="-14" name="Compare variable" sid="7945556048729232" type="System">
+                    <param id="0" name="Variable">hasPyrokinesis</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
+                <action id="-13" name="Set boolean" sid="4258974516342252" type="Player">
+                    <param id="0" name="Instance variable">Reloading</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="4" name="Set animation" sid="4912683730159933" type="Player">
                     <param id="0" name="Animation">&quot;Pyro&quot;</param>
                     <param id="1" name="From">1</param>
@@ -124,10 +120,6 @@
                     <param id="0" name="Object">Pyro</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="4258974516342252" type="Player">
-                    <param id="0" name="Instance variable">Reloading</param>
-                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
             <sub-events>
@@ -143,23 +135,14 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="452350801684898">
+        <event-block any="1" sid="452350801684898">
             <conditions>
                 <condition id="-3" inverted="1" name="Is on-screen" sid="706061302037404" type="Pyro" />
+                <condition id="-3" inverted="1" name="Is on-screen" sid="39731823887808" type="Telekinesis" />
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="4318049227310453" type="Pyro" />
-            </actions>
-        </event-block>
-        <event-block sid="2332380936018169">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="9553742871924778" type="Pyro" />
-            </conditions>
-            <actions>
-                <action id="-13" name="Set boolean" sid="4661763715456438" type="Player">
-                    <param id="0" name="Instance variable">Reloading</param>
-                    <param id="1" name="Value">0</param>
-                </action>
+                <action id="-9" name="Destroy" sid="6655291323968445" type="Telekinesis" />
             </actions>
         </event-block>
         <event-block sid="3510044604808624">
@@ -172,6 +155,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-13" name="Set boolean" sid="1370287011813739" type="Player">
+                    <param id="0" name="Instance variable">Reloading</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="4" name="Set animation" sid="5660122121922772" type="Player">
                     <param id="0" name="Animation">&quot;Telekinesis&quot;</param>
                     <param id="1" name="From">1</param>
@@ -180,10 +167,6 @@
                     <param id="0" name="Object">Telekinesis</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">1</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="1370287011813739" type="Player">
-                    <param id="0" name="Instance variable">Reloading</param>
-                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
             <sub-events>
@@ -199,20 +182,13 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="3961238795006437">
+        <event-block any="1" sid="2332380936018169">
             <conditions>
-                <condition id="-3" inverted="1" name="Is on-screen" sid="39731823887808" type="Telekinesis" />
+                <condition id="-19" name="On destroyed" sid="9553742871924778" type="Pyro" />
+                <condition id="-19" name="On destroyed" sid="1252777467388713" type="Telekinesis" />
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="6655291323968445" type="Telekinesis" />
-            </actions>
-        </event-block>
-        <event-block sid="5870466069990523">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="5274174070920803" type="Telekinesis" />
-            </conditions>
-            <actions>
-                <action id="-13" name="Set boolean" sid="2220696832992376" type="Player">
+                <action id="-13" name="Set boolean" sid="4661763715456438" type="Player">
                     <param id="0" name="Instance variable">Reloading</param>
                     <param id="1" name="Value">0</param>
                 </action>
@@ -249,6 +225,19 @@
                 <action id="4" name="Set animation" sid="3971203558781728" type="Player">
                     <param id="0" name="Animation">&quot;Escalando&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="571805307828115">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9805568211965823" type="Player">
+                    <param id="0" name="Object">ToxicElements</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="9510037866061958" type="Player">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">10</param>
                 </action>
             </actions>
         </event-block>
