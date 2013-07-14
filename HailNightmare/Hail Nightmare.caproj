@@ -190,8 +190,15 @@
         <object-type name="Shadow" sid="2715362229490938">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5192077427093382" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1690541937074128" speed="5">
+                    <frame duration="1" hotspotX="0.527221" hotspotY="0.450184" />
+                    <frame duration="1" hotspotX="0.501362" hotspotY="0.490272" />
+                </animation>
+                <animation framecount="4" loop="0" name="Shadow_Morrendo" pingpong="0" repeatcount="1" repeatto="0" sid="8158776802807874" speed="5">
+                    <frame duration="1" hotspotX="0.657658" hotspotY="0.501424" />
+                    <frame duration="1" hotspotX="0.278607" hotspotY="0.577617" />
+                    <frame duration="1" hotspotX="0.278607" hotspotY="0.577617" />
+                    <frame duration="1" hotspotX="0.278607" hotspotY="0.577617" />
                 </animation>
             </animation-folder>
         </object-type>

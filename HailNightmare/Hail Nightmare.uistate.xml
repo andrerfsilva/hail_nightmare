@@ -10,7 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML 5" />
     </configurations>
     <open-tabs>
-        <layout active="1">DarkRoom</layout>
+        <layout>DarkRoom</layout>
+        <event-sheet active="1">DarkRoom Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -18,7 +19,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
+    <families-expanded root="1">
         <family expanded="0" name="Floors" />
         <family expanded="0" name="ToxicElements" />
         <family expanded="0" name="Pipes" />

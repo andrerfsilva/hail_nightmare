@@ -84,14 +84,23 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="7932527883180978" type="Shadows" />
+                <action id="-9" name="Destroy" sid="7643879760821118" type="Pyro" />
+                <action behavior="Sine" id="0" name="Set active" sid="3160020160741719" type="Shadows">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8860944552255513" type="Shadows">
+                    <param id="0" name="Animation">&quot;Shadow_Morrendo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="7789963584533346" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2304491637403829" type="Shadows" />
                 <action id="0" name="Spawn another object" sid="3950664261738097" type="Shadows">
                     <param id="0" name="Object">Smoke</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
-                <action id="-9" name="Destroy" sid="2304491637403829" type="Shadows" />
-                <action id="-9" name="Destroy" sid="7643879760821118" type="Pyro" />
             </actions>
         </event-block>
         <event-block sid="6240278222053161">
@@ -129,6 +138,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Eventos de transição de layout</comment>
         <event-block sid="7197758415733628">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3663612335289158" type="System" />
@@ -196,6 +206,35 @@
                 </action>
                 <action id="-25" name="Go to layout (by name)" sid="6310583785699399" type="System">
                     <param id="0" name="Layout">&quot;Prison Hall&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Eventos de mirror de shadow</comment>
+        <event-block sid="6211825631904859">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="655131600563178" type="System">
+                    <param id="0" name="First value">Shadows.Sine.Value</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6654761172397176" type="Shadows">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6259391678908162">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="9244015338461988" type="System">
+                    <param id="0" name="First value">Shadows.Sine.Value</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2431059851816974" type="Shadows">
+                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
