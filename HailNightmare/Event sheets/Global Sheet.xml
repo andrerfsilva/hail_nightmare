@@ -71,19 +71,6 @@
                 <action behavior="Platform" id="12" name="Fall through" sid="2237582676192199" type="Player" />
             </actions>
         </event-block>
-        <event-block sid="7881572814599093">
-            <conditions>
-                <condition id="2" name="Key is down" sid="3627621689128448" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="3239397754632455" type="Player">
-                    <param id="0" name="Animation">&quot;Pulando&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
         <comment>Eventos de shooting</comment>
         <event-block collapsed="1" sid="1414263088900472">
             <conditions>
@@ -236,6 +223,7 @@
                 <action id="-9" name="Destroy" sid="6941159665421039" type="ShadowBullet" />
             </actions>
         </event-block>
+        <comment>Animações de movimento.</comment>
         <event-block sid="8153009295361609">
             <conditions>
                 <condition behavior="Platform" id="7" name="On stopped" sid="8101027974690504" type="Player" />
