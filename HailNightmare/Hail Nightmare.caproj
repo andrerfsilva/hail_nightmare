@@ -867,6 +867,11 @@
         </object-type>
         <object-type name="ShadowBullet" sid="3706903605764320">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="8453840205486885">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
                     <frame duration="1" hotspotX="0.501433" hotspotY="0.501845" />

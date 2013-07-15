@@ -27,6 +27,10 @@
                     <param id="0" name="Instance variable">enabled</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-9" name="Set value" sid="5825917347888276" type="System">
+                    <param id="0" name="Variable">LastLayout</param>
+                    <param id="1" name="Value">&quot;Office&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4726125607342345">
