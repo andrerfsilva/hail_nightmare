@@ -27,10 +27,6 @@
                 <action id="7" name="Set mirrored" sid="4674896391503046" type="Player">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="5723009451931295" type="Player">
-                    <param id="0" name="Animation">&quot;CorrendoCurto&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="2744759288062962">
@@ -42,10 +38,6 @@
             <actions>
                 <action id="7" name="Set mirrored" sid="933005824487447" type="Player">
                     <param id="0" name="State">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="1267785022650401" type="Player">
-                    <param id="0" name="Animation">&quot;CorrendoCurto&quot;</param>
-                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -87,7 +79,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="3239397754632455" type="Player">
-                    <param id="0" name="Animation">&quot;PulandoCurto&quot;</param>
+                    <param id="0" name="Animation">&quot;Pulando&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -251,6 +243,41 @@
             <actions>
                 <action id="4" name="Set animation" sid="9758608578553125" type="Player">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5618687954049896">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="1191441127422921" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5723767934896878" type="Player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5579382503976546">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="9157193765023171" type="Player" />
+                <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="1493743405272439" type="Player" />
+                <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="3361974785425975" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6667028663101553" type="Player">
+                    <param id="0" name="Animation">&quot;CorrendoCurto&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9968274456957585">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="7428476396589448" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4976646444282255" type="Player">
+                    <param id="0" name="Animation">&quot;Pulando&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>

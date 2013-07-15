@@ -18,10 +18,10 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -106,7 +106,7 @@
                     <frame duration="1" hotspotX="0.47619" hotspotY="0.484848" />
                     <frame duration="1" hotspotX="0.542056" hotspotY="0.427632" />
                 </animation>
-                <animation framecount="6" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="4760628599139744" speed="5">
+                <animation framecount="6" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="4760628599139744" speed="8">
                     <frame duration="1" hotspotX="0.410959" hotspotY="0.451807" />
                     <frame duration="1" hotspotX="0.407407" hotspotY="0.510753" />
                     <frame duration="1" hotspotX="0.503401" hotspotY="0.518919" />
