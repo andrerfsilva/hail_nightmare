@@ -4,12 +4,12 @@
     <sid>4456317598906492</sid>
     <event-sheet>Menu Sheet</event-sheet>
     <size>
-        <width>1280</width>
-        <height>1024</height>
+        <width>800</width>
+        <height>600</height>
     </size>
     <margins>
-        <horizontal>800</horizontal>
-        <vertical>600</vertical>
+        <horizontal>0</horizontal>
+        <vertical>0</vertical>
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>

@@ -8,8 +8,8 @@
         <height>806</height>
     </size>
     <margins>
-        <horizontal>500</horizontal>
-        <vertical>500</vertical>
+        <horizontal>0</horizontal>
+        <vertical>0</vertical>
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
@@ -126,8 +126,8 @@
                         <width>42</width>
                         <height>149.399993896</height>
                         <depth>0</depth>
-                        <hotspotX>0.642857134</hotspotX>
-                        <hotspotY>0.49444443</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
