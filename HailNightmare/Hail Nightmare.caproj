@@ -18,10 +18,10 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -844,6 +844,10 @@
         <object-type name="Text" sid="9721243215484865">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TiledBackground" sid="9816004970046246">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="Floors" plugin-id="Sprite" sid="3568532233825893">
@@ -935,8 +939,9 @@
         <layout>Prison Hall.xml</layout>
         <layout>Corridor.xml</layout>
         <layout>Office.xml</layout>
+        <layout>TheEnd.xml</layout>
     </layout-folder>
-    <event-folder expanded="0">
+    <event-folder expanded="1">
         <event-sheet>DarkRoom Sheet.xml</event-sheet>
         <event-sheet>Global Sheet.xml</event-sheet>
         <event-sheet>Library Sheet.xml</event-sheet>
