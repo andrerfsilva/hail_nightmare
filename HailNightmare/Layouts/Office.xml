@@ -407,7 +407,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DrNightmare_TurretPyro" uid="64">
+                <instance type="DrNightmare_TurretPyro" uid="67">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -446,7 +446,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DrNightmare_TurretTele" uid="65">
+                <instance type="DrNightmare_TurretTele" uid="68">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -551,7 +551,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ShadowBullet" uid="67">
+                <instance type="ShadowBullet" uid="70">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -648,7 +648,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DrNightmare" uid="63">
+                <instance type="DrNightmare" uid="124">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -706,7 +706,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Life" uid="66">
+                <instance type="Life" uid="128">
                     <properties>
                         <text>Life: 100</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -733,7 +733,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DrNightmareLife" uid="68">
+                <instance type="DrNightmareLife" uid="174">
                     <properties>
                         <text>Dr. Nightmare Life: 150</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -760,7 +760,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="NightmareTelekinesis" uid="70">
+                <instance type="NightmareTelekinesis" uid="180">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

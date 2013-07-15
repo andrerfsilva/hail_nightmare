@@ -78,7 +78,15 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="8981486397631875" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1286772413588761" type="GuardaShooter">
+                    <param id="0" name="Pin to">Guarda</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Turret" id="1" name="Add object to target" sid="3378589315510986" type="GuardaShooter">
+                    <param id="0" name="Target">Player</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="2721788298057752">
                     <conditions>
@@ -114,6 +122,212 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="4364468466328957">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6394644889754849" type="Guarda">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;esquerda&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="2921002137147013" type="Guarda">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="2487653601101748" type="Guarda">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1156606778910843" type="Guarda">
+                    <param id="0" name="Animation">&quot;Andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4953450919994005">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="874942280601779" type="Guarda">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;direita&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="2194259858809305" type="Guarda">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="4874653522799675" type="Guarda">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2463792459775072" type="Guarda">
+                    <param id="0" name="Animation">&quot;Andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6784331343367278">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7283070492477377" type="Guarda">
+                    <param id="0" name="Object">EdgeMarker</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9257958208228771" type="Guarda">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Value">&quot;direita&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7343141203603564">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2384235324388576" type="Guarda">
+                    <param id="0" name="Object">EdgeMarker2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9577397626059869" type="Guarda">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Value">&quot;esquerda&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2351829855234849">
+            <conditions>
+                <condition behavior="Turret" id="0" name="Has target" sid="6126088283718966" type="GuardaShooter" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4653103797029244" type="Guarda">
+                    <param id="0" name="Animation">&quot;Atirando&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="9385149277998371" type="Guarda">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Value">&quot;Atirando&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="2444795975361395">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="9554553169051606" type="Guarda">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">Player.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="5440996508838378" type="Guarda">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="6328877286824958" type="GuardaShooter">
+                            <param id="0" name="Object">Guarda</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7380833604792254">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3204372926648321" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="3860350052609366" type="Guarda">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="4901183408995574" type="GuardaShooter">
+                            <param id="0" name="Object">Guarda</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1541544204718198">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="5608033209074798" type="GuardaShooter" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="3208407348300471" type="GuardaShooter">
+                    <param id="0" name="Object">Tiro</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="838364725792317">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8835827347539128" type="Telekinesis">
+                    <param id="0" name="Object">Guarda</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7966226888226013" type="GuardaShooter" />
+                <action id="-10" name="Set value" sid="9682396877805289" type="Guarda">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Value">&quot;morrendo&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="77066296294736" type="Guarda">
+                    <param id="0" name="Animation">&quot;MorrendoChoke&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="3010354787522825" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2644853261610118" type="Guarda" />
+            </actions>
+        </event-block>
+        <event-block sid="6176206679723031">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5709496386443779" type="Pyro">
+                    <param id="0" name="Object">Guarda</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3434227104845116" type="GuardaShooter" />
+                <action id="4" name="Set animation" sid="7570754261072439" type="Guarda">
+                    <param id="0" name="Animation">&quot;MorrendoPyro&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="9040643683743118" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1515674801117162" type="Guarda" />
+            </actions>
+        </event-block>
+        <event-block sid="2354119174004765">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7042296827950683" type="Tiro">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="687309015484814" type="Tiro" />
+                <action id="-12" name="Subtract from" sid="7885257542466414" type="Player">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2958352654889951">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="6762550175644621" type="System">
+                    <param id="0" name="First value">distance(Player.X,Player.Y,Guarda.X,Guarda.Y)</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">GuardaShooter.Turret.Range+150</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7625746457119847" type="Guarda">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Atirando&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4384935782833886" type="Guarda">
+                    <param id="0" name="Animation">&quot;Andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="4203511503150599" type="Guarda">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Value">&quot;direita&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

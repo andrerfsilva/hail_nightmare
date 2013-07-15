@@ -684,9 +684,19 @@
         </object-type>
         <object-type name="Guarda" sid="983218008056785">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Define a acao do guarda: esquerda, direita ou atirando" name="action" sid="1549137998126673" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="4518361477984957">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1992778654397863" speed="5">
-                    <frame duration="1" hotspotX="0.754717" hotspotY="0.443243" />
+                    <frame duration="1" hotspotX="0.754717" hotspotY="0.443243">
+                        <image-point name="Imagepoint 1" x="1.26415" y="0.367568" />
+                    </frame>
                 </animation>
                 <animation framecount="6" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="6116695854493706" speed="5">
                     <frame duration="1" hotspotX="0.754717" hotspotY="0.443243" />
@@ -701,11 +711,18 @@
                     <frame duration="1" hotspotX="0.425287" hotspotY="0.186047" />
                     <frame duration="1" hotspotX="0.503185" hotspotY="0.5" />
                 </animation>
-                <animation framecount="1" loop="0" name="Animation4" pingpong="0" repeatcount="1" repeatto="0" sid="5873798715956585" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="2" loop="0" name="Atirando" pingpong="0" repeatcount="1" repeatto="0" sid="5873798715956585" speed="5">
+                    <frame duration="1" hotspotX="0.407767" hotspotY="0.475248">
+                        <image-point name="Imagepoint 1" x="0.504854" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.504854" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.544304" hotspotY="0.275676">
+                        <image-point name="Imagepoint 1" x="1.02532" y="0.275676" />
+                        <image-point name="Imagepoint 2" x="-0.0253165" y="0.313514" />
+                    </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="Animation5" pingpong="0" repeatcount="1" repeatto="0" sid="8599601664453412" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="MorrendoPyro" pingpong="0" repeatcount="1" repeatto="0" sid="8599601664453412" speed="5">
+                    <frame duration="1" hotspotX="0.439394" hotspotY="0.427027" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -726,6 +743,53 @@
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EdgeMarker" sid="2401892064054581">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9614866426670722" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EdgeMarker2" sid="7531716150111204">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4400192835049604" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tiro" sid="9530706445161016">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="7451994679871907">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7361437917858136" speed="5">
+                    <frame duration="1" hotspotX="1.14286" hotspotY="0.4" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GuardaShooter" sid="795466110733737">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="4875986965757329">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="6078363032637112">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3651238457949736" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="0" y="0" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -963,8 +1027,8 @@
         <event-sheet>Office Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="124" />
-        <global-instance type="Mouse" uid="128" />
+        <global-instance type="Keyboard" uid="182" />
+        <global-instance type="Mouse" uid="183" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
