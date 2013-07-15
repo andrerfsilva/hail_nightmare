@@ -97,14 +97,14 @@
                     <frame duration="1" hotspotX="0.415094" hotspotY="0.462428" />
                 </animation>
                 <animation framecount="8" loop="0" name="Correndo" pingpong="0" repeatcount="1" repeatto="0" sid="4591593970435585" speed="15">
-                    <frame duration="1" hotspotX="0.514286" hotspotY="0.491228" />
-                    <frame duration="1" hotspotX="0.467532" hotspotY="0.413333" />
-                    <frame duration="1" hotspotX="0.528302" hotspotY="0.421053" />
-                    <frame duration="1" hotspotX="0.487805" hotspotY="0.466667" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.428571" />
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.436709" />
-                    <frame duration="1" hotspotX="0.47619" hotspotY="0.484848" />
-                    <frame duration="1" hotspotX="0.542056" hotspotY="0.427632" />
+                    <frame duration="1" hotspotX="0.2" hotspotY="0.473684" />
+                    <frame duration="1" hotspotX="0.272727" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.198113" hotspotY="0.407895" />
+                    <frame duration="1" hotspotX="0.170732" hotspotY="0.454545" />
+                    <frame duration="1" hotspotX="0.181034" hotspotY="0.387755" />
+                    <frame duration="1" hotspotX="0.221053" hotspotY="0.43038" />
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.454545" />
+                    <frame duration="1" hotspotX="0.196262" hotspotY="0.407895" />
                 </animation>
                 <animation framecount="6" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="4760628599139744" speed="8">
                     <frame duration="1" hotspotX="0.410959" hotspotY="0.451807" />
@@ -117,19 +117,6 @@
                 <animation framecount="2" loop="1" name="Escalando" pingpong="0" repeatcount="1" repeatto="0" sid="3553342643280499" speed="5">
                     <frame duration="1" hotspotX="0.772727" hotspotY="0.495283" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
-                </animation>
-                <animation framecount="5" loop="1" name="CorrendoCurto" pingpong="0" repeatcount="1" repeatto="0" sid="2167122608702876" speed="10">
-                    <frame duration="1" hotspotX="0.2" hotspotY="0.473684" />
-                    <frame duration="1" hotspotX="0.272727" hotspotY="0.4" />
-                    <frame duration="1" hotspotX="0.198113" hotspotY="0.407895" />
-                    <frame duration="1" hotspotX="0.170732" hotspotY="0.454545" />
-                    <frame duration="1" hotspotX="0.181034" hotspotY="0.387755" />
-                </animation>
-                <animation framecount="4" loop="0" name="PulandoCurto" pingpong="0" repeatcount="1" repeatto="0" sid="30205313270994" speed="5">
-                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
-                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
-                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
-                    <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
                 </animation>
             </animation-folder>
         </object-type>

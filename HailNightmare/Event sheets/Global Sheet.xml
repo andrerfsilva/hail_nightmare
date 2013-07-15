@@ -254,7 +254,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="6667028663101553" type="Player">
-                    <param id="0" name="Animation">&quot;CorrendoCurto&quot;</param>
+                    <param id="0" name="Animation">&quot;Correndo&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
