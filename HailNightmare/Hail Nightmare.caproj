@@ -22,7 +22,6 @@
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -167,13 +166,6 @@
                     <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
                     <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
                     <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
-                </animation>
-                <animation framecount="5" loop="0" name="Morrendo" pingpong="0" repeatcount="1" repeatto="0" sid="3611892353293773" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.500383" hotspotY="0.500394" />
-                    <frame duration="1" hotspotX="0.500383" hotspotY="0.500394" />
-                    <frame duration="1" hotspotX="0.500383" hotspotY="0.500394" />
-                    <frame duration="1" hotspotX="0.500383" hotspotY="0.500394" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -334,8 +326,40 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9309538410446624" speed="5">
-                    <frame duration="1" hotspotX="0.460317" hotspotY="0.479167" />
+                <animation framecount="1" loop="0" name="Inativo" pingpong="0" repeatcount="1" repeatto="0" sid="4805724452735602" speed="5">
+                    <frame duration="1" hotspotX="0.571429" hotspotY="0.444444">
+                        <collision-poly>
+                            <point x="1" y="0.718447" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Agressivo" pingpong="1" repeatcount="1" repeatto="1" sid="8612389979170916" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0.538529" />
+                            <point x="1" y="0.955729" />
+                            <point x="1" y="0.955729" />
+                            <point x="1" y="0.955729" />
+                            <point x="1" y="0.955729" />
+                            <point x="1" y="0.955729" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.490196" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.488372">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -751,143 +775,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="DrNightmare" sid="4038559234466905">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="isPyroTurretActive" sid="9193870340557363" type="boolean" />
-                <instance-variable name="Life" sid="3202408157273812" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Sine" sid="2838893222583892">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7136286846872038" speed="5">
-                    <frame duration="1" hotspotX="0.328358" hotspotY="0.501393" />
-                </animation>
-                <animation framecount="3" loop="0" name="Shooting" pingpong="0" repeatcount="1" repeatto="0" sid="2827835306738571" speed="5">
-                    <frame duration="1" hotspotX="0.502488" hotspotY="0.501393" />
-                    <frame duration="1" hotspotX="0.328358" hotspotY="0.501393" />
-                    <frame duration="1" hotspotX="0.328358" hotspotY="0.501393" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="DrNightmare_TurretPyro" sid="7529497787502265">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="enabled" sid="1982566270904504" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Turret" sid="9772222286217549">
-                    <behavior id="Turret" />
-                </behavior-type>
-                <behavior-type name="Pin" sid="7597437166801009">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="858905298572514" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="DrNightmare_TurretTele" sid="8986212085965546">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="enabled" sid="9939736705892273" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Turret" sid="1426437726473741">
-                    <behavior id="Turret" />
-                </behavior-type>
-                <behavior-type name="Pin" sid="6695144703881073">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4588630929862051" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="DrNightmareLife" sid="1029141182143118">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="NightmarePyro" sid="8280443230649634">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="2284990584981584">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="9822195506574602">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5117475091570673" speed="5">
-                    <frame duration="1" hotspotX="0.586207" hotspotY="0.5125">
-                        <collision-poly>
-                            <point x="0.110345" y="0.5" />
-                            <point x="0.331034" y="0.1125" />
-                            <point x="0.793103" y="0.0625" />
-                            <point x="0.834483" y="0.9" />
-                            <point x="0.151724" y="0.575" />
-                            <point x="0.331034" y="0.5125" />
-                            <point x="0.427586" y="0.725" />
-                            <point x="0.558621" y="0.9" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="NightmareTelekinesis" sid="5320604098297809">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="DestroyOutsideLayout" sid="7375402797554232">
-                    <behavior id="destroy" />
-                </behavior-type>
-                <behavior-type name="Bullet" sid="1314682157623715">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2975081201868234" speed="5">
-                    <frame duration="1" hotspotX="0.583333" hotspotY="0.516129">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.670322" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0.670322" y="0.918622" />
-                            <point x="0" y="0.208212" />
-                            <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ShadowBullet" sid="8272010635058177">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="1849976422657284">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6141056707995003" speed="5">
-                    <frame duration="1" hotspotX="0.527221" hotspotY="0.450184" />
-                    <frame duration="1" hotspotX="0.501362" hotspotY="0.490272" />
-                </animation>
-                <animation framecount="4" loop="0" name="Shadow_Morrendo" pingpong="0" repeatcount="1" repeatto="0" sid="8672899066812077" speed="5">
-                    <frame duration="1" hotspotX="0.657658" hotspotY="0.501424" />
-                    <frame duration="1" hotspotX="0.278607" hotspotY="0.577617" />
-                    <frame duration="1" hotspotX="0.278607" hotspotY="0.577617" />
-                    <frame duration="1" hotspotX="0.278607" hotspotY="0.577617" />
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families>
         <family name="Floors" plugin-id="Sprite" sid="3568532233825893">
@@ -907,10 +794,6 @@
         </family>
         <family name="ToxicElements" plugin-id="Sprite" sid="3568532233825894">
             <members>
-                <member>NightmarePyro</member>
-                <member>NightmareTelekinesis</member>
-                <member>Shadow</member>
-                <member>ShadowBullet</member>
                 <member>ToxicWater</member>
                 <member>WaterDrop</member>
             </members>
@@ -941,7 +824,6 @@
         <family name="Shadows" plugin-id="Sprite" sid="3568532233825899">
             <members>
                 <member>Shadow</member>
-                <member>ShadowBullet</member>
             </members>
             <behaviors>
                 <behavior-type name="Sine" sid="5293226674103573">
@@ -952,7 +834,6 @@
         <family name="Enemies" plugin-id="Sprite" sid="3568532233825898">
             <members>
                 <member>Shadow</member>
-                <member>ShadowBullet</member>
             </members>
         </family>
         <family name="Platforms" plugin-id="Sprite" sid="3568532233825900">

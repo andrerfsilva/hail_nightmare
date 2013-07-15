@@ -12,8 +12,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="6195805881971914" type="System">
-                    <param id="0" name="Variable">hasPyrokinesis</param>
+                <action id="-9" name="Set value" sid="6028465640201621" type="System">
+                    <param id="0" name="Variable">PyrokinesisEnabled</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-4" name="Set position to another object" sid="1808629427754039" type="PyroAnnounceText">
@@ -74,6 +74,10 @@
                 <action id="-13" name="Set boolean" sid="1684834416824556" type="BookMonster">
                     <param id="0" name="Instance variable">Aggressive</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7338685384587624" type="BookMonster">
+                    <param id="0" name="Animation">&quot;Agressivo&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
