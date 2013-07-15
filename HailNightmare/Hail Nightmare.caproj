@@ -20,10 +20,10 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -78,7 +78,7 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4241294760443215" speed="5">
-                    <frame duration="1" hotspotX="0.642857" hotspotY="0.494444" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
                 <animation framecount="6" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="3311549496078605" speed="5">
                     <frame duration="1" hotspotX="0.603774" hotspotY="0.48" />
@@ -119,11 +119,11 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
                 </animation>
                 <animation framecount="5" loop="1" name="CorrendoCurto" pingpong="0" repeatcount="1" repeatto="0" sid="2167122608702876" speed="10">
-                    <frame duration="1" hotspotX="0.514286" hotspotY="0.491228" />
-                    <frame duration="1" hotspotX="0.467532" hotspotY="0.413333" />
-                    <frame duration="1" hotspotX="0.528302" hotspotY="0.421053" />
-                    <frame duration="1" hotspotX="0.487805" hotspotY="0.466667" />
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.428571" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.473684" />
+                    <frame duration="1" hotspotX="0.467532" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.528302" hotspotY="0.407895" />
+                    <frame duration="1" hotspotX="0.487805" hotspotY="0.454545" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.387755" />
                 </animation>
                 <animation framecount="4" loop="0" name="PulandoCurto" pingpong="0" repeatcount="1" repeatto="0" sid="30205313270994" speed="5">
                     <frame duration="1" hotspotX="0.494737" hotspotY="0.635762" />
