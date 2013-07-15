@@ -75,23 +75,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block collapsed="1" sid="4571013102426695">
+        <event-block sid="4571013102426695">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="1811284805634451" type="System">
                     <param id="0" name="Interval (seconds)">random(5, 10)</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="5331987104859114" type="DrNightmare">
-                    <param id="0" name="Object">ShadowBullet</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-22" name="Set angle toward position" sid="8327418099802924" type="ShadowBullet">
-                    <param id="0" name="X">Player.X</param>
-                    <param id="1" name="Y">Player.Y</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
                 <event-block sid="4686538382234176">
                     <conditions>
@@ -127,6 +117,26 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="6024337341585985">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6916840762794933" type="System">
+                            <param id="0" name="First value">DrNightmare.Life</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="5331987104859114" type="DrNightmare">
+                            <param id="0" name="Object">ShadowBullet</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="8327418099802924" type="ShadowBullet">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="4724678109451349">
@@ -150,6 +160,15 @@
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">DrNightmare.life - 10</param>
                 </action>
+                <action id="0" name="Spawn another object" sid="8052243612246585" type="DrNightmare">
+                    <param id="0" name="Object">Smoke</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="7655528391605047" type="Smoke">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1749670037180087" type="Pyro" />
             </actions>
         </event-block>
         <event-block sid="309702284919238">
@@ -163,6 +182,15 @@
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">DrNightmare.life - 5</param>
                 </action>
+                <action id="0" name="Spawn another object" sid="1832222771550996" type="DrNightmare">
+                    <param id="0" name="Object">Smoke</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="7450709244573793" type="Smoke">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2231874165991887" type="Telekinesis" />
             </actions>
         </event-block>
         <event-block any="1" sid="9315489148711395">
@@ -173,6 +201,44 @@
             <actions>
                 <action id="-9" name="Destroy" sid="6966870627503492" type="NightmareTelekinesis" />
                 <action id="-9" name="Destroy" sid="7229152360967601" type="NightmarePyro" />
+            </actions>
+        </event-block>
+        <event-block sid="1972197886950773">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1041116266149963" type="DrNightmare">
+                    <param id="0" name="Instance variable">Life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4306461216779099" type="DrNightmare">
+                    <param id="0" name="Object">Smoke</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5203687615976476" type="Smoke">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5665044450115513" type="DrNightmare_TurretPyro" />
+                <action id="0" name="Spawn another object" sid="6138103563659252" type="DrNightmare">
+                    <param id="0" name="Object">Smoke</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5712341325866235" type="Smoke">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2581927080273486" type="DrNightmare_TurretTele" />
+                <action id="0" name="Spawn another object" sid="9666334290601474" type="DrNightmare">
+                    <param id="0" name="Object">Smoke</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1460476054098045" type="Smoke">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3585331943178144" type="DrNightmare" />
             </actions>
         </event-block>
     </events>

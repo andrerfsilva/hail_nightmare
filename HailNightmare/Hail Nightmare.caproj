@@ -22,6 +22,7 @@
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -47,7 +48,7 @@
         <prop name="Preview mode">HTTP</prop>
         <prop name="Sampling">Linear</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-type name="PlayerLight" sid="6568159624552749">
             <plugin id="Sprite" />
             <behaviors>
@@ -204,6 +205,9 @@
             </animation-folder>
         </object-type>
         <object-type name="Life" sid="9755893690448594">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="DrNightmareLife" sid="9755893690448595">
             <plugin id="Text" />
         </object-type>
         <object-type name="Key" sid="1977851077226495">
@@ -775,6 +779,100 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="DrNightmare_TurretPyro" sid="3706903605764317">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Indica se essa Turret esta abilitada para atirar" name="enabled" sid="8206243929054003" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Turret" sid="6555726507570028">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="5293226674103575">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DrNightmare" sid="3706903605764318">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Indica se eh o momento da Turret de Pyro estar ativa" name="isPyroTurretActive" sid="8206243929054005" type="boolean" />
+                <instance-variable comment="Medidor de hit poits do Dr. Pesadelo." name="Life" sid="8206243929054006" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="7789317909969924">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
+                    <frame duration="1" hotspotX="0.502463" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="Shooting" pingpong="0" repeatcount="1" repeatto="0" sid="3671991923098199" speed="5">
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.501393" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.501393" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.501393" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DrNightmare_TurretTele" sid="3706903605764319">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Indica se essa Turret esta abilitada para atirar" name="enabled" sid="8206243929054004" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Turret" sid="5293226674103577">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="5293226674103577">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NightmareTelekinesis" sid="3706903605764318">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="753635677381539">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NightmarePyro" sid="3706903605764319">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="4542028395461867">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ShadowBullet" sid="3706903605764320">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740744810008028" speed="5">
+                    <frame duration="1" hotspotX="0.501433" hotspotY="0.501845" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Floors" plugin-id="Sprite" sid="3568532233825893">
@@ -794,6 +892,10 @@
         </family>
         <family name="ToxicElements" plugin-id="Sprite" sid="3568532233825894">
             <members>
+                <member>NightmarePyro</member>
+                <member>NightmareTelekinesis</member>
+                <member>Shadow</member>
+                <member>ShadowBullet</member>
                 <member>ToxicWater</member>
                 <member>WaterDrop</member>
             </members>

@@ -148,8 +148,8 @@
                     <behavior-instances>
                         <behavior-instance type="Platform">
                             <properties>
-                                <max-speed>250</max-speed>
-                                <acceleration>250</acceleration>
+                                <max-speed>300</max-speed>
+                                <acceleration>300</acceleration>
                                 <deceleration>1500</deceleration>
                                 <jump-strength>650</jump-strength>
                                 <gravity>1500</gravity>

@@ -4,7 +4,7 @@
     <name>Global Sheet</name>
     <events>
         <variable constant="0" name="LastLayout" sid="896027254131104" static="0" type="text">Game Menu</variable>
-        <variable constant="0" name="hasPyrokinesis" sid="9691900332625987" static="0" type="number">0</variable>
+        <variable constant="0" name="PyrokinesisEnabled" sid="9691900332625987" static="0" type="number">0</variable>
         <variable constant="0" name="hasOfficeKey" sid="635775648536289" static="0" type="number">0</variable>
         <comment>Eventos globais</comment>
         <event-block sid="5327203796643251">
@@ -102,7 +102,7 @@
                     <param id="0" name="Instance variable">Reloading</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="7945556048729232" type="System">
-                    <param id="0" name="Variable">hasPyrokinesis</param>
+                    <param id="0" name="Variable">PyrokinesisEnabled</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -239,6 +239,9 @@
                     <param id="0" name="Instance variable">Life</param>
                     <param id="1" name="Value">10</param>
                 </action>
+                <action id="-9" name="Destroy" sid="5077980599355555" type="NightmareTelekinesis" />
+                <action id="-9" name="Destroy" sid="5786631725596234" type="NightmarePyro" />
+                <action id="-9" name="Destroy" sid="6941159665421039" type="ShadowBullet" />
             </actions>
         </event-block>
     </events>

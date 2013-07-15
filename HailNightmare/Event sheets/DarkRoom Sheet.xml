@@ -88,6 +88,9 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-8" name="Set angle" sid="1409963511322217" type="Smoke">
+                    <param id="0" name="Angle">270</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6240278222053161">
