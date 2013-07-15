@@ -421,7 +421,7 @@
                         <behavior-instance type="Turret">
                             <properties>
                                 <range>900</range>
-                                <rate-of-fire>3</rate-of-fire>
+                                <rate-of-fire>2.5</rate-of-fire>
                                 <rotate>Yes</rotate>
                                 <rotate-speed>180</rotate-speed>
                                 <target-mode>First in range</target-mode>
@@ -460,7 +460,7 @@
                         <behavior-instance type="Turret">
                             <properties>
                                 <range>900</range>
-                                <rate-of-fire>3</rate-of-fire>
+                                <rate-of-fire>2.5</rate-of-fire>
                                 <rotate>Yes</rotate>
                                 <rotate-speed>180</rotate-speed>
                                 <target-mode>First in range</target-mode>
@@ -558,6 +558,17 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -724,7 +735,7 @@
                 </instance>
                 <instance type="DrNightmareLife" uid="68">
                     <properties>
-                        <text>Dr. Nightmare Life: 200</text>
+                        <text>Dr. Nightmare Life: 150</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Comic Sans MS,-24,700,0</font>
                         <color>255,255,255</color>
