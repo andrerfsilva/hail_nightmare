@@ -310,7 +310,7 @@
                 <condition id="-8" name="Compare two values" sid="6762550175644621" type="System">
                     <param id="0" name="First value">distance(Player.X,Player.Y,Guarda.X,Guarda.Y)</param>
                     <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Second value">GuardaShooter.Turret.Range+150</param>
+                    <param id="2" name="Second value">GuardaShooter.Turret.Range+600</param>
                 </condition>
                 <condition id="-7" name="Compare instance variable" sid="7625746457119847" type="Guarda">
                     <param id="0" name="Instance variable">action</param>
