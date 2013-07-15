@@ -59,7 +59,7 @@
         <event-block sid="2086195367992254">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="7242441928522702" type="System">
-                    <param id="0" name="Interval (seconds)">random(5, 10)</param>
+                    <param id="0" name="Interval (seconds)">random(2, 5)</param>
                 </condition>
                 <condition id="-15" name="Pick nearest/furthest" sid="7129770099433668" type="BookMonster">
                     <param id="0" name="Which">0</param>
