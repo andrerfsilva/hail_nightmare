@@ -204,9 +204,9 @@
                     <behavior-instances>
                         <behavior-instance type="Platform">
                             <properties>
-                                <max-speed>300</max-speed>
-                                <acceleration>300</acceleration>
-                                <deceleration>1500</deceleration>
+                                <max-speed>450</max-speed>
+                                <acceleration>8000</acceleration>
+                                <deceleration>8000</deceleration>
                                 <jump-strength>650</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
@@ -229,8 +229,8 @@
                         <width>42</width>
                         <height>149.399993896</height>
                         <depth>0</depth>
-                        <hotspotX>0.642857134</hotspotX>
-                        <hotspotY>0.49444443</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

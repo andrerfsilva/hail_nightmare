@@ -48,7 +48,7 @@
         <prop name="Preview mode">HTTP</prop>
         <prop name="Sampling">Linear</prop>
     </configuration-settings>
-    <object-folder expanded="0">
+    <object-folder expanded="1">
         <object-type name="PlayerLight" sid="6568159624552749">
             <plugin id="Sprite" />
             <behaviors>
@@ -936,7 +936,7 @@
         <layout>Corridor.xml</layout>
         <layout>Office.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder expanded="0">
         <event-sheet>DarkRoom Sheet.xml</event-sheet>
         <event-sheet>Global Sheet.xml</event-sheet>
         <event-sheet>Library Sheet.xml</event-sheet>

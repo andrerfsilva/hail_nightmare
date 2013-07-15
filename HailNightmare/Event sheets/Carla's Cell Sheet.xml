@@ -53,7 +53,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="8345959896114148" type="Player">
-                            <param id="0" name="X">444</param>
+                            <param id="0" name="X">504</param>
                             <param id="1" name="Y">578</param>
                         </action>
                     </actions>
