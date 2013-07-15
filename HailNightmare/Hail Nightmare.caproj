@@ -835,6 +835,30 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="PyroParticle" sid="463604468180042">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="1666758640642883">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="9130865651436419">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TelekinesisParticle" sid="626629925565432">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="6352251236028222">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="7090128299875036">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="Floors" plugin-id="Sprite" sid="3568532233825893">
