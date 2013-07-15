@@ -118,6 +118,13 @@
                     <frame duration="1" hotspotX="0.772727" hotspotY="0.495283" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
                 </animation>
+                <animation framecount="5" loop="0" name="Morrendo" pingpong="0" repeatcount="1" repeatto="0" sid="831932746301326" speed="5">
+                    <frame duration="1" hotspotX="0.503937" hotspotY="0.501057" />
+                    <frame duration="1" hotspotX="0.503937" hotspotY="0.501057" />
+                    <frame duration="1" hotspotX="0.502513" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502075" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Keyboard" sid="1685849411953899">
